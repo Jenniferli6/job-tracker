@@ -1,0 +1,977 @@
+[
+  {
+    "name": "Google / Alphabet",
+    "ats": "custom",
+    "url": "https://www.google.com/about/careers/applications/jobs/results"
+  },
+  {
+    "name": "Microsoft",
+    "ats": "custom",
+    "url": "https://jobs.careers.microsoft.com/global/en/search"
+  },
+  {
+    "name": "Amazon / AWS",
+    "ats": "custom",
+    "url": "https://www.amazon.jobs/en/"
+  },
+  {
+    "name": "Meta",
+    "ats": "custom",
+    "url": "https://www.metacareers.com/jobs"
+  },
+  {
+    "name": "Apple",
+    "ats": "custom",
+    "url": "https://jobs.apple.com/en-us/search"
+  },
+  {
+    "name": "NVIDIA",
+    "ats": "custom",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite"
+  },
+  {
+    "name": "Tesla",
+    "ats": "custom",
+    "url": "https://www.tesla.com/careers/search"
+  },
+  {
+    "name": "Netflix",
+    "ats": "custom",
+    "url": "https://explore.jobs.netflix.net/careers"
+  },
+  {
+    "name": "Uber",
+    "ats": "custom",
+    "url": "https://www.uber.com/us/en/careers/list/"
+  },
+  {
+    "name": "Airbnb",
+    "ats": "greenhouse",
+    "slug": "airbnb"
+  },
+  {
+    "name": "ByteDance / TikTok",
+    "ats": "custom",
+    "url": "https://careers.tiktok.com/position"
+  },
+  {
+    "name": "LinkedIn",
+    "ats": "greenhouse",
+    "slug": "linkedin"
+  },
+  {
+    "name": "DoorDash",
+    "ats": "custom",
+    "url": "https://careers.doordash.com/"
+  },
+  {
+    "name": "Spotify",
+    "ats": "lever",
+    "slug": "spotify"
+  },
+  {
+    "name": "Pinterest",
+    "ats": "greenhouse",
+    "slug": "pinterest"
+  },
+  {
+    "name": "Reddit",
+    "ats": "greenhouse",
+    "slug": "reddit"
+  },
+  {
+    "name": "Snap",
+    "ats": "custom",
+    "url": "https://careers.snap.com/jobs"
+  },
+  {
+    "name": "Roblox",
+    "ats": "greenhouse",
+    "slug": "roblox"
+  },
+  {
+    "name": "Discord",
+    "ats": "greenhouse",
+    "slug": "discord"
+  },
+  {
+    "name": "Shopify",
+    "ats": "custom",
+    "url": "https://www.shopify.com/careers"
+  },
+  {
+    "name": "Booking Holdings",
+    "ats": "custom",
+    "url": "https://careers.bookingholdings.com/"
+  },
+  {
+    "name": "Expedia Group",
+    "ats": "custom",
+    "url": "https://careers.expediagroup.com/"
+  },
+  {
+    "name": "MercadoLibre",
+    "ats": "custom",
+    "url": "https://careers.mercadolibre.com/"
+  },
+  {
+    "name": "Alibaba",
+    "ats": "custom",
+    "url": "https://careers.alibabagroup.com/"
+  },
+  {
+    "name": "Tencent",
+    "ats": "custom",
+    "url": "https://careers.tencent.com/"
+  },
+  {
+    "name": "Baidu",
+    "ats": "greenhouse",
+    "slug": "baidu"
+  },
+  {
+    "name": "Coupang",
+    "ats": "greenhouse",
+    "slug": "coupang"
+  },
+  {
+    "name": "Sea Limited",
+    "ats": "custom",
+    "url": "https://www.sea.com/careers"
+  },
+  {
+    "name": "Instacart",
+    "ats": "greenhouse",
+    "slug": "instacart"
+  },
+  {
+    "name": "Duolingo",
+    "ats": "greenhouse",
+    "slug": "duolingo"
+  },
+  {
+    "name": "OpenAI",
+    "ats": "ashby",
+    "slug": "openai"
+  },
+  {
+    "name": "Anthropic",
+    "ats": "greenhouse",
+    "slug": "anthropic"
+  },
+  {
+    "name": "Google DeepMind",
+    "ats": "custom",
+    "url": "https://deepmind.google/about/careers/"
+  },
+  {
+    "name": "Microsoft AI",
+    "ats": "custom",
+    "url": "https://jobs.careers.microsoft.com/global/en/search"
+  },
+  {
+    "name": "Meta AI",
+    "ats": "custom",
+    "url": "https://www.metacareers.com/jobs"
+  },
+  {
+    "name": "xAI",
+    "ats": "greenhouse",
+    "slug": "xai"
+  },
+  {
+    "name": "Mistral AI",
+    "ats": "lever",
+    "slug": "mistral"
+  },
+  {
+    "name": "Cohere",
+    "ats": "ashby",
+    "slug": "cohere"
+  },
+  {
+    "name": "Scale AI",
+    "ats": "greenhouse",
+    "slug": "scaleai"
+  },
+  {
+    "name": "Hugging Face",
+    "ats": "custom",
+    "url": "https://apply.workable.com/huggingface/"
+  },
+  {
+    "name": "Perplexity",
+    "ats": "ashby",
+    "slug": "perplexity"
+  },
+  {
+    "name": "Glean",
+    "ats": "custom",
+    "url": "https://www.glean.com/careers"
+  },
+  {
+    "name": "Together AI",
+    "ats": "greenhouse",
+    "slug": "togetherai"
+  },
+  {
+    "name": "ElevenLabs",
+    "ats": "ashby",
+    "slug": "elevenlabs"
+  },
+  {
+    "name": "Runway",
+    "ats": "ashby",
+    "slug": "runway"
+  },
+  {
+    "name": "Harvey",
+    "ats": "ashby",
+    "slug": "harvey"
+  },
+  {
+    "name": "Anysphere / Cursor",
+    "ats": "ashby",
+    "slug": "cursor"
+  },
+  {
+    "name": "Sierra",
+    "ats": "ashby",
+    "slug": "sierra"
+  },
+  {
+    "name": "Writer",
+    "ats": "ashby",
+    "slug": "writer"
+  },
+  {
+    "name": "Groq",
+    "ats": "custom",
+    "url": "https://groq.com/careers/"
+  },
+  {
+    "name": "CoreWeave",
+    "ats": "greenhouse",
+    "slug": "coreweave"
+  },
+  {
+    "name": "Cerebras Systems",
+    "ats": "ashby",
+    "slug": "cerebras"
+  },
+  {
+    "name": "SambaNova Systems",
+    "ats": "greenhouse",
+    "slug": "sambanovasystems"
+  },
+  {
+    "name": "Lambda",
+    "ats": "ashby",
+    "slug": "lambda"
+  },
+  {
+    "name": "Fireworks AI",
+    "ats": "ashby",
+    "slug": "fireworks"
+  },
+  {
+    "name": "Baseten",
+    "ats": "ashby",
+    "slug": "baseten"
+  },
+  {
+    "name": "Replicate",
+    "ats": "custom",
+    "url": "https://replicate.com/about"
+  },
+  {
+    "name": "Modal",
+    "ats": "ashby",
+    "slug": "modal"
+  },
+  {
+    "name": "Weights & Biases",
+    "ats": "custom",
+    "url": "https://wandb.ai/site/careers"
+  },
+  {
+    "name": "Decagon",
+    "ats": "ashby",
+    "slug": "decagon"
+  },
+  {
+    "name": "Databricks",
+    "ats": "greenhouse",
+    "slug": "databricks"
+  },
+  {
+    "name": "Snowflake",
+    "ats": "ashby",
+    "slug": "snowflake"
+  },
+  {
+    "name": "Palantir",
+    "ats": "lever",
+    "slug": "palantir"
+  },
+  {
+    "name": "Cloudflare",
+    "ats": "greenhouse",
+    "slug": "cloudflare"
+  },
+  {
+    "name": "Datadog",
+    "ats": "greenhouse",
+    "slug": "datadog"
+  },
+  {
+    "name": "MongoDB",
+    "ats": "greenhouse",
+    "slug": "mongodb"
+  },
+  {
+    "name": "Confluent",
+    "ats": "ashby",
+    "slug": "confluent"
+  },
+  {
+    "name": "Elastic",
+    "ats": "greenhouse",
+    "slug": "elastic"
+  },
+  {
+    "name": "Fivetran",
+    "ats": "greenhouse",
+    "slug": "fivetran"
+  },
+  {
+    "name": "dbt Labs",
+    "ats": "custom",
+    "url": "https://www.getdbt.com/careers"
+  },
+  {
+    "name": "Astronomer",
+    "ats": "ashby",
+    "slug": "astronomer"
+  },
+  {
+    "name": "Vercel",
+    "ats": "greenhouse",
+    "slug": "vercel"
+  },
+  {
+    "name": "GitHub",
+    "ats": "custom",
+    "url": "https://github.careers/"
+  },
+  {
+    "name": "GitLab",
+    "ats": "greenhouse",
+    "slug": "gitlab"
+  },
+  {
+    "name": "HashiCorp",
+    "ats": "custom",
+    "url": "https://www.hashicorp.com/careers"
+  },
+  {
+    "name": "Docker",
+    "ats": "ashby",
+    "slug": "docker"
+  },
+  {
+    "name": "Redis",
+    "ats": "ashby",
+    "slug": "redis"
+  },
+  {
+    "name": "Cockroach Labs",
+    "ats": "greenhouse",
+    "slug": "cockroachlabs"
+  },
+  {
+    "name": "Supabase",
+    "ats": "ashby",
+    "slug": "supabase"
+  },
+  {
+    "name": "Pinecone",
+    "ats": "ashby",
+    "slug": "pinecone"
+  },
+  {
+    "name": "DigitalOcean",
+    "ats": "custom",
+    "url": "https://www.digitalocean.com/careers"
+  },
+  {
+    "name": "Akamai",
+    "ats": "custom",
+    "url": "https://www.akamai.com/careers"
+  },
+  {
+    "name": "Fastly",
+    "ats": "greenhouse",
+    "slug": "fastly"
+  },
+  {
+    "name": "Grafana Labs",
+    "ats": "greenhouse",
+    "slug": "grafanalabs"
+  },
+  {
+    "name": "Sentry",
+    "ats": "ashby",
+    "slug": "sentry"
+  },
+  {
+    "name": "Postman",
+    "ats": "greenhouse",
+    "slug": "postman"
+  },
+  {
+    "name": "Cloudera",
+    "ats": "custom",
+    "url": "https://www.cloudera.com/careers.html"
+  },
+  {
+    "name": "Dremio",
+    "ats": "greenhouse",
+    "slug": "dremio"
+  },
+  {
+    "name": "Starburst",
+    "ats": "greenhouse",
+    "slug": "starburst"
+  },
+  {
+    "name": "ClickHouse",
+    "ats": "greenhouse",
+    "slug": "clickhouse"
+  },
+  {
+    "name": "Salesforce",
+    "ats": "custom",
+    "url": "https://www.salesforce.com/company/careers/"
+  },
+  {
+    "name": "ServiceNow",
+    "ats": "custom",
+    "url": "https://careers.servicenow.com/"
+  },
+  {
+    "name": "Adobe",
+    "ats": "custom",
+    "url": "https://careers.adobe.com/"
+  },
+  {
+    "name": "Oracle",
+    "ats": "custom",
+    "url": "https://www.oracle.com/careers/"
+  },
+  {
+    "name": "SAP",
+    "ats": "custom",
+    "url": "https://jobs.sap.com/"
+  },
+  {
+    "name": "IBM",
+    "ats": "custom",
+    "url": "https://www.ibm.com/careers"
+  },
+  {
+    "name": "Cisco",
+    "ats": "custom",
+    "url": "https://jobs.cisco.com/"
+  },
+  {
+    "name": "Workday",
+    "ats": "custom",
+    "url": "https://workday.wd5.myworkdayjobs.com/Workday"
+  },
+  {
+    "name": "Atlassian",
+    "ats": "custom",
+    "url": "https://www.atlassian.com/company/careers/all-jobs"
+  },
+  {
+    "name": "HubSpot",
+    "ats": "greenhouse",
+    "slug": "hubspot"
+  },
+  {
+    "name": "Zoom",
+    "ats": "custom",
+    "url": "https://careers.zoom.us/jobs/search"
+  },
+  {
+    "name": "Slack",
+    "ats": "custom",
+    "url": "https://www.metacareers.com/jobs"
+  },
+  {
+    "name": "Notion",
+    "ats": "ashby",
+    "slug": "notion"
+  },
+  {
+    "name": "Airtable",
+    "ats": "greenhouse",
+    "slug": "airtable"
+  },
+  {
+    "name": "Asana",
+    "ats": "greenhouse",
+    "slug": "asana"
+  },
+  {
+    "name": "monday.com",
+    "ats": "custom",
+    "url": "https://monday.com/careers/positions"
+  },
+  {
+    "name": "Box",
+    "ats": "custom",
+    "url": "https://www.box.com/careers"
+  },
+  {
+    "name": "Dropbox",
+    "ats": "greenhouse",
+    "slug": "dropbox"
+  },
+  {
+    "name": "DocuSign",
+    "ats": "custom",
+    "url": "https://careers.docusign.com/"
+  },
+  {
+    "name": "Canva",
+    "ats": "custom",
+    "url": "https://www.canva.com/careers/jobs/"
+  },
+  {
+    "name": "Figma",
+    "ats": "greenhouse",
+    "slug": "figma"
+  },
+  {
+    "name": "Intuit",
+    "ats": "custom",
+    "url": "https://jobs.intuit.com/"
+  },
+  {
+    "name": "Autodesk",
+    "ats": "custom",
+    "url": "https://autodesk.wd1.myworkdayjobs.com/Ext"
+  },
+  {
+    "name": "Procore",
+    "ats": "custom",
+    "url": "https://www.procore.com/jobs"
+  },
+  {
+    "name": "Zendesk",
+    "ats": "custom",
+    "url": "https://www.zendesk.com/careers/"
+  },
+  {
+    "name": "Freshworks",
+    "ats": "lever",
+    "slug": "freshworks"
+  },
+  {
+    "name": "Qualtrics",
+    "ats": "greenhouse",
+    "slug": "qualtrics"
+  },
+  {
+    "name": "Samsara",
+    "ats": "greenhouse",
+    "slug": "samsara"
+  },
+  {
+    "name": "Veeva Systems",
+    "ats": "lever",
+    "slug": "veeva"
+  },
+  {
+    "name": "UiPath",
+    "ats": "ashby",
+    "slug": "uipath"
+  },
+  {
+    "name": "Stripe",
+    "ats": "greenhouse",
+    "slug": "stripe"
+  },
+  {
+    "name": "Block",
+    "ats": "greenhouse",
+    "slug": "block"
+  },
+  {
+    "name": "PayPal",
+    "ats": "custom",
+    "url": "https://careers.pypl.com/"
+  },
+  {
+    "name": "Plaid",
+    "ats": "lever",
+    "slug": "plaid"
+  },
+  {
+    "name": "Coinbase",
+    "ats": "greenhouse",
+    "slug": "coinbase"
+  },
+  {
+    "name": "Robinhood",
+    "ats": "greenhouse",
+    "slug": "robinhood"
+  },
+  {
+    "name": "Ramp",
+    "ats": "ashby",
+    "slug": "ramp"
+  },
+  {
+    "name": "Brex",
+    "ats": "greenhouse",
+    "slug": "brex"
+  },
+  {
+    "name": "Chime",
+    "ats": "greenhouse",
+    "slug": "chime"
+  },
+  {
+    "name": "SoFi",
+    "ats": "greenhouse",
+    "slug": "sofi"
+  },
+  {
+    "name": "Affirm",
+    "ats": "greenhouse",
+    "slug": "affirm"
+  },
+  {
+    "name": "Klarna",
+    "ats": "custom",
+    "url": "https://www.klarna.com/careers/"
+  },
+  {
+    "name": "Adyen",
+    "ats": "greenhouse",
+    "slug": "adyen"
+  },
+  {
+    "name": "Wise",
+    "ats": "custom",
+    "url": "https://wise.jobs/"
+  },
+  {
+    "name": "Marqeta",
+    "ats": "greenhouse",
+    "slug": "marqeta"
+  },
+  {
+    "name": "Carta",
+    "ats": "greenhouse",
+    "slug": "carta"
+  },
+  {
+    "name": "Mercury",
+    "ats": "greenhouse",
+    "slug": "mercury"
+  },
+  {
+    "name": "Rippling",
+    "ats": "custom",
+    "url": "https://www.rippling.com/careers"
+  },
+  {
+    "name": "Toast",
+    "ats": "greenhouse",
+    "slug": "toast"
+  },
+  {
+    "name": "BILL",
+    "ats": "custom",
+    "url": "https://careers.bill.com/"
+  },
+  {
+    "name": "Nubank",
+    "ats": "greenhouse",
+    "slug": "nubank"
+  },
+  {
+    "name": "Revolut",
+    "ats": "custom",
+    "url": "https://www.revolut.com/careers/"
+  },
+  {
+    "name": "Checkout.com",
+    "ats": "custom",
+    "url": "https://www.checkout.com/careers"
+  },
+  {
+    "name": "Airwallex",
+    "ats": "ashby",
+    "slug": "airwallex"
+  },
+  {
+    "name": "Circle",
+    "ats": "custom",
+    "url": "https://www.circle.com/careers"
+  },
+  {
+    "name": "Chainalysis",
+    "ats": "custom",
+    "url": "https://www.chainalysis.com/careers/"
+  },
+  {
+    "name": "Alloy",
+    "ats": "greenhouse",
+    "slug": "alloy"
+  },
+  {
+    "name": "Persona",
+    "ats": "ashby",
+    "slug": "persona"
+  },
+  {
+    "name": "Socure",
+    "ats": "ashby",
+    "slug": "socure"
+  },
+  {
+    "name": "Modern Treasury",
+    "ats": "ashby",
+    "slug": "moderntreasury"
+  },
+  {
+    "name": "NVIDIA",
+    "ats": "custom",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite"
+  },
+  {
+    "name": "AMD",
+    "ats": "custom",
+    "url": "https://careers.amd.com/"
+  },
+  {
+    "name": "Intel",
+    "ats": "custom",
+    "url": "https://jobs.intel.com/"
+  },
+  {
+    "name": "Broadcom",
+    "ats": "custom",
+    "url": "https://careers.broadcom.com/"
+  },
+  {
+    "name": "Qualcomm",
+    "ats": "custom",
+    "url": "https://careers.qualcomm.com/"
+  },
+  {
+    "name": "TSMC",
+    "ats": "custom",
+    "url": "https://careers.tsmc.com/"
+  },
+  {
+    "name": "ASML",
+    "ats": "custom",
+    "url": "https://www.asml.com/en/careers"
+  },
+  {
+    "name": "Arm",
+    "ats": "custom",
+    "url": "https://careers.arm.com/"
+  },
+  {
+    "name": "Micron",
+    "ats": "custom",
+    "url": "https://careers.micron.com/"
+  },
+  {
+    "name": "Applied Materials",
+    "ats": "custom",
+    "url": "https://careers.appliedmaterials.com/"
+  },
+  {
+    "name": "Lam Research",
+    "ats": "custom",
+    "url": "https://www.lamresearch.com/careers/"
+  },
+  {
+    "name": "Marvell",
+    "ats": "custom",
+    "url": "https://careers.marvell.com/"
+  },
+  {
+    "name": "Texas Instruments",
+    "ats": "custom",
+    "url": "https://careers.ti.com/"
+  },
+  {
+    "name": "Samsung Electronics",
+    "ats": "custom",
+    "url": "https://www.samsung.com/us/careers/"
+  },
+  {
+    "name": "SK Hynix",
+    "ats": "custom",
+    "url": "https://careers.skhynix.com/"
+  },
+  {
+    "name": "Palo Alto Networks",
+    "ats": "custom",
+    "url": "https://jobs.paloaltonetworks.com/"
+  },
+  {
+    "name": "CrowdStrike",
+    "ats": "custom",
+    "url": "https://www.crowdstrike.com/careers/"
+  },
+  {
+    "name": "Cloudflare",
+    "ats": "greenhouse",
+    "slug": "cloudflare"
+  },
+  {
+    "name": "Zscaler",
+    "ats": "greenhouse",
+    "slug": "zscaler"
+  },
+  {
+    "name": "Okta",
+    "ats": "greenhouse",
+    "slug": "okta"
+  },
+  {
+    "name": "Wiz",
+    "ats": "ashby",
+    "slug": "wiz"
+  },
+  {
+    "name": "Snyk",
+    "ats": "ashby",
+    "slug": "snyk"
+  },
+  {
+    "name": "SentinelOne",
+    "ats": "custom",
+    "url": "https://www.sentinelone.com/careers/"
+  },
+  {
+    "name": "Fortinet",
+    "ats": "custom",
+    "url": "https://www.fortinet.com/corporate/careers/"
+  },
+  {
+    "name": "CyberArk",
+    "ats": "custom",
+    "url": "https://www.cyberark.com/careers/"
+  },
+  {
+    "name": "Rubrik",
+    "ats": "greenhouse",
+    "slug": "rubrik"
+  },
+  {
+    "name": "Netskope",
+    "ats": "greenhouse",
+    "slug": "netskope"
+  },
+  {
+    "name": "Tanium",
+    "ats": "greenhouse",
+    "slug": "tanium"
+  },
+  {
+    "name": "Chainguard",
+    "ats": "greenhouse",
+    "slug": "chainguard"
+  },
+  {
+    "name": "1Password",
+    "ats": "ashby",
+    "slug": "1password"
+  },
+  {
+    "name": "Tesla",
+    "ats": "custom",
+    "url": "https://www.tesla.com/careers/search"
+  },
+  {
+    "name": "Waymo",
+    "ats": "greenhouse",
+    "slug": "waymo"
+  },
+  {
+    "name": "SpaceX",
+    "ats": "greenhouse",
+    "slug": "spacex"
+  },
+  {
+    "name": "Anduril",
+    "ats": "custom",
+    "url": "https://www.anduril.com/careers/"
+  },
+  {
+    "name": "Zoox",
+    "ats": "lever",
+    "slug": "zoox"
+  },
+  {
+    "name": "Aurora Innovation",
+    "ats": "greenhouse",
+    "slug": "aurorainnovation"
+  },
+  {
+    "name": "Cruise",
+    "ats": "custom",
+    "url": "https://www.getcruise.com/careers"
+  },
+  {
+    "name": "Rivian",
+    "ats": "custom",
+    "url": "https://rivian.com/careers/search"
+  },
+  {
+    "name": "Figure AI",
+    "ats": "greenhouse",
+    "slug": "figure"
+  },
+  {
+    "name": "Boston Dynamics",
+    "ats": "custom",
+    "url": "https://bostondynamics.com/careers/"
+  },
+  {
+    "name": "Skydio",
+    "ats": "ashby",
+    "slug": "skydio"
+  },
+  {
+    "name": "Shield AI",
+    "ats": "greenhouse",
+    "slug": "shield"
+  },
+  {
+    "name": "Applied Intuition",
+    "ats": "ashby",
+    "slug": "applied intuition"
+  },
+  {
+    "name": "Zipline",
+    "ats": "custom",
+    "url": "https://www.flyzipline.com/careers"
+  },
+  {
+    "name": "Nuro",
+    "ats": "greenhouse",
+    "slug": "nuro"
+  }
+]
