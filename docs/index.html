@@ -54,7 +54,7 @@
     font-size: 28px;
     font-weight: 700;
     margin: 0 0 6px;
-    letter-spacing: -0.01em;
+    letter-spacing: 0;
   }
   .sub {
     color: var(--text-dim);
@@ -71,6 +71,28 @@
     border-radius: 10px;
     overflow: hidden;
     margin: 28px 0;
+  }
+  .tabs {
+    display: inline-flex;
+    padding: 3px;
+    margin: 0 0 4px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+  }
+  .tab {
+    border: 0;
+    border-radius: 5px;
+    padding: 8px 14px;
+    background: transparent;
+    color: var(--text-dim);
+    font: 500 13px 'Inter', sans-serif;
+    cursor: pointer;
+  }
+  .tab:hover { color: var(--text); }
+  .tab.active {
+    color: var(--text);
+    background: var(--surface-2);
   }
   .stat {
     background: var(--surface);
@@ -94,6 +116,7 @@
     margin-bottom: 24px;
     flex-wrap: wrap;
   }
+  .controls[hidden], [hidden] { display: none !important; }
   input[type=text], select {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -188,6 +211,30 @@
     color: var(--text-dim);
     white-space: nowrap;
   }
+  .col-category { color: var(--text-dim); }
+  .col-ats {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .site-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .site-link:hover { text-decoration: underline; }
+  .site-domain {
+    display: block;
+    max-width: 280px;
+    margin-top: 3px;
+    overflow: hidden;
+    color: var(--text-faint);
+    font: 11px 'IBM Plex Mono', monospace;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 
   .empty {
     text-align: center;
@@ -227,6 +274,11 @@
       <p class="sub">New postings across your target company list, newest first.</p>
     </header>
 
+    <nav class="tabs" aria-label="Dashboard views">
+      <button class="tab active" type="button" data-view="jobs">Jobs</button>
+      <button class="tab" type="button" data-view="companies">Companies</button>
+    </nav>
+
     <div class="stats">
       <div class="stat">
         <div class="stat-num" id="stat-total">—</div>
@@ -242,7 +294,7 @@
       </div>
     </div>
 
-    <div class="controls">
+    <div class="controls" id="jobControls">
       <input type="text" id="search" placeholder="Search title or company...">
       <select id="companyFilter"><option value="">All companies</option></select>
       <select id="dateFilter"><option value="">All dates</option></select>
@@ -252,25 +304,42 @@
       </label>
     </div>
 
+    <div class="controls" id="companyControls" hidden>
+      <input type="text" id="companySearch" placeholder="Search company, category, or website...">
+      <select id="categoryFilter"><option value="">All categories</option></select>
+      <select id="atsFilter"><option value="">All tracking types</option></select>
+    </div>
+
     <div id="feed"></div>
+    <div id="companyList" hidden></div>
   </div>
 
   <script>
     let allJobs = [];
+    let allCompanies = [];
+    let activeView = 'jobs';
 
     function isCustomAlert(job) {
       return job.title.includes('Careers page content changed');
     }
 
-    async function loadJobs() {
-      try {
-        const res = await fetch('jobs_log.json?_=' + Date.now());
-        allJobs = await res.json();
-      } catch (e) {
-        allJobs = [];
-      }
+    async function loadData() {
+      const cacheBust = '?_=' + Date.now();
+      const [jobsResult, companiesResult] = await Promise.allSettled([
+        fetch('jobs_log.json' + cacheBust).then(res => {
+          if (!res.ok) throw new Error('Could not load jobs');
+          return res.json();
+        }),
+        fetch('companies.json' + cacheBust).then(res => {
+          if (!res.ok) throw new Error('Could not load companies');
+          return res.json();
+        })
+      ]);
+      allJobs = jobsResult.status === 'fulfilled' ? jobsResult.value : [];
+      allCompanies = companiesResult.status === 'fulfilled' ? companiesResult.value : [];
       populateCompanyFilter();
       populateDateFilter();
+      populateCompanyListFilters();
       render();
     }
 
@@ -296,7 +365,26 @@
       });
     }
 
+    function populateCompanyListFilters() {
+      addOptions('categoryFilter', [...new Set(allCompanies.map(c => c.category).filter(Boolean))].sort());
+      addOptions('atsFilter', [...new Set(allCompanies.map(c => c.ats).filter(Boolean))].sort());
+    }
+
+    function addOptions(id, values) {
+      const sel = document.getElementById(id);
+      values.forEach(value => {
+        const opt = document.createElement('option');
+        opt.value = value;
+        opt.textContent = value;
+        sel.appendChild(opt);
+      });
+    }
+
     function render() {
+      if (activeView === 'companies') {
+        renderCompanies();
+        return;
+      }
       const searchTerm = document.getElementById('search').value.toLowerCase();
       const companyFilter = document.getElementById('companyFilter').value;
       const dateFilter = document.getElementById('dateFilter').value;
@@ -312,12 +400,13 @@
         return matchesSearch && matchesCompany && matchesDate && matchesCustom;
       });
 
-      document.getElementById('stat-total').textContent = allJobs.length;
       const latestDate = allJobs[0]?.date_found;
-      document.getElementById('stat-today').textContent =
-        allJobs.filter(j => j.date_found === latestDate).length || 0;
-      document.getElementById('stat-companies').textContent =
-        new Set(allJobs.map(j => j.company)).size;
+      setStats(
+        allJobs.length,
+        allJobs.filter(j => j.date_found === latestDate).length || 0,
+        new Set(allJobs.map(j => j.company)).size,
+        'postings logged', 'found on latest run', 'companies represented'
+      );
 
       const feed = document.getElementById('feed');
       feed.innerHTML = '';
@@ -364,6 +453,67 @@
       feed.appendChild(table);
     }
 
+    function renderCompanies() {
+      const searchTerm = document.getElementById('companySearch').value.toLowerCase();
+      const category = document.getElementById('categoryFilter').value;
+      const ats = document.getElementById('atsFilter').value;
+      const filtered = allCompanies.filter(company => {
+        const haystack = [company.name, company.category, company.careers_url, company.ats]
+          .filter(Boolean).join(' ').toLowerCase();
+        return (!searchTerm || haystack.includes(searchTerm)) &&
+          (!category || company.category === category) &&
+          (!ats || company.ats === ats);
+      });
+
+      setStats(
+        allCompanies.length,
+        new Set(allCompanies.map(c => c.category).filter(Boolean)).size,
+        new Set(allCompanies.map(c => c.ats).filter(Boolean)).size,
+        'target companies', 'categories', 'tracking types'
+      );
+
+      const container = document.getElementById('companyList');
+      container.innerHTML = '';
+      if (filtered.length === 0) {
+        container.innerHTML = `<div class="empty"><div class="empty-icon">// no results</div><div class="empty-title">${allCompanies.length ? 'Nothing matches your filters' : 'Company list unavailable'}</div><div>${allCompanies.length ? 'Try a different search or filter.' : 'The published companies.json file could not be loaded.'}</div></div>`;
+        return;
+      }
+
+      const table = document.createElement('div');
+      table.className = 'table-wrap';
+      table.innerHTML = `<table><thead><tr><th>Company</th><th>Category</th><th>Careers website</th><th>Tracking</th></tr></thead><tbody></tbody></table>`;
+      const tbody = table.querySelector('tbody');
+      filtered.forEach(company => {
+        const tr = document.createElement('tr');
+        const url = safeUrl(company.careers_url);
+        const domain = url ? new URL(url).hostname.replace(/^www\./, '') : '';
+        tr.innerHTML = `
+          <td class="col-company">${escapeHtml(company.name)}</td>
+          <td class="col-category">${escapeHtml(company.category || 'Uncategorized')}</td>
+          <td>${url ? `<a class="site-link" href="${escapeHtml(url)}" target="_blank" rel="noopener">Open careers site</a><span class="site-domain">${escapeHtml(domain)}</span>` : '<span class="col-date">Not available</span>'}</td>
+          <td class="col-ats">${escapeHtml(company.ats)}</td>`;
+        tbody.appendChild(tr);
+      });
+      container.appendChild(table);
+    }
+
+    function setStats(first, second, third, firstLabel, secondLabel, thirdLabel) {
+      document.getElementById('stat-total').textContent = first;
+      document.getElementById('stat-today').textContent = second;
+      document.getElementById('stat-companies').textContent = third;
+      const labels = document.querySelectorAll('.stat-label');
+      [firstLabel, secondLabel, thirdLabel].forEach((label, index) => labels[index].textContent = label);
+    }
+
+    function safeUrl(value) {
+      try {
+        const url = new URL(value);
+        return ['http:', 'https:'].includes(url.protocol) ? url.href : '';
+      } catch (_) {
+        return '';
+      }
+    }
+
     function escapeHtml(str) {
       const div = document.createElement('div');
       div.textContent = str || '';
@@ -374,8 +524,22 @@
     document.getElementById('companyFilter').addEventListener('change', render);
     document.getElementById('dateFilter').addEventListener('change', render);
     document.getElementById('hideCustom').addEventListener('change', render);
+    document.getElementById('companySearch').addEventListener('input', render);
+    document.getElementById('categoryFilter').addEventListener('change', render);
+    document.getElementById('atsFilter').addEventListener('change', render);
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        activeView = tab.dataset.view;
+        document.querySelectorAll('.tab').forEach(item => item.classList.toggle('active', item === tab));
+        document.getElementById('jobControls').hidden = activeView !== 'jobs';
+        document.getElementById('companyControls').hidden = activeView !== 'companies';
+        document.getElementById('feed').hidden = activeView !== 'jobs';
+        document.getElementById('companyList').hidden = activeView !== 'companies';
+        render();
+      });
+    });
 
-    loadJobs();
+    loadData();
   </script>
 
   <footer>tracking companies via Greenhouse / Lever / Ashby / custom career pages · updates daily via GitHub Actions</footer>

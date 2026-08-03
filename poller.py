@@ -22,9 +22,11 @@ from pathlib import Path
 import requests
 
 COMPANIES_FILE = Path("companies.json")
+COMPANY_NAMES_FILE = Path("company_names.json")
 STATE_FILE = Path("state.json")
 LOG_FILE = Path("jobs_log.json")
 DOCS_LOG_FILE = Path("docs/jobs_log.json")
+DOCS_COMPANIES_FILE = Path("docs/companies.json")
 
 TIMEOUT = 20
 MAX_LOG_ENTRIES = 2000  # trim oldest beyond this so the log/dashboard stays manageable
@@ -117,6 +119,32 @@ def save_state(state):
 
 # ---------- Job log (feeds the dashboard) ----------
 
+def sync_dashboard_companies(companies):
+    """Publish the target list with display fields used by GitHub Pages."""
+    categories = {}
+    if COMPANY_NAMES_FILE.exists():
+        source = json.loads(COMPANY_NAMES_FILE.read_text())
+        categories = {item["Company"]: item.get("Category", "") for item in source}
+
+    board_urls = {
+        "greenhouse": "https://boards.greenhouse.io/{slug}",
+        "lever": "https://jobs.lever.co/{slug}",
+        "ashby": "https://jobs.ashbyhq.com/{slug}",
+    }
+    dashboard_companies = []
+    for company in companies:
+        item = dict(company)
+        item["category"] = categories.get(company["name"], "Uncategorized")
+        if company["ats"] == "custom":
+            item["careers_url"] = company.get("url", "")
+        else:
+            template = board_urls.get(company["ats"], "")
+            item["careers_url"] = template.format(slug=company.get("slug", "")) if template else ""
+        dashboard_companies.append(item)
+
+    DOCS_COMPANIES_FILE.parent.mkdir(exist_ok=True)
+    DOCS_COMPANIES_FILE.write_text(json.dumps(dashboard_companies, indent=2))
+
 def append_to_log(new_by_company):
     """Append newly found postings to jobs_log.json (and a copy under
     docs/ for GitHub Pages), newest first, trimmed to MAX_LOG_ENTRIES."""
@@ -205,6 +233,7 @@ def notify(new_by_company):
 
 def main():
     companies = json.loads(COMPANIES_FILE.read_text())
+    sync_dashboard_companies(companies)
     state = load_state()
     new_by_company = {}
     errors = []
