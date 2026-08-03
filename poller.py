@@ -23,8 +23,11 @@ import requests
 
 COMPANIES_FILE = Path("companies.json")
 STATE_FILE = Path("state.json")
+LOG_FILE = Path("jobs_log.json")
+DOCS_LOG_FILE = Path("docs/jobs_log.json")
 
 TIMEOUT = 20
+MAX_LOG_ENTRIES = 2000  # trim oldest beyond this so the log/dashboard stays manageable
 
 
 # ---------- Fetchers: one per ATS, each returns a list of dicts ----------
@@ -110,6 +113,40 @@ def load_state():
 
 def save_state(state):
     STATE_FILE.write_text(json.dumps(state, indent=2, sort_keys=True))
+
+
+# ---------- Job log (feeds the dashboard) ----------
+
+def append_to_log(new_by_company):
+    """Append newly found postings to jobs_log.json (and a copy under
+    docs/ for GitHub Pages), newest first, trimmed to MAX_LOG_ENTRIES."""
+    import datetime
+    today = datetime.date.today().isoformat()
+
+    existing = []
+    if LOG_FILE.exists():
+        existing = json.loads(LOG_FILE.read_text())
+
+    new_entries = []
+    for company, jobs in new_by_company.items():
+        for j in jobs:
+            new_entries.append({
+                "date_found": today,
+                "company": company,
+                "title": j.get("title", ""),
+                "location": j.get("location", ""),
+                "url": j.get("url", ""),
+            })
+
+    combined = new_entries + existing  # newest first
+    combined = combined[:MAX_LOG_ENTRIES]
+
+    LOG_FILE.write_text(json.dumps(combined, indent=2))
+
+    # Keep a copy under docs/ so GitHub Pages can serve it alongside the
+    # dashboard HTML (Pages only serves files inside the configured folder).
+    DOCS_LOG_FILE.parent.mkdir(exist_ok=True)
+    DOCS_LOG_FILE.write_text(json.dumps(combined, indent=2))
 
 
 # ---------- Notifications ----------
@@ -200,6 +237,7 @@ def main():
         state[name] = list(current_ids)
 
     save_state(state)
+    append_to_log(new_by_company)
     notify(new_by_company)
 
     if errors:

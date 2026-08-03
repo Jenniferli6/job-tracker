@@ -7,9 +7,11 @@ when a new role goes up.
 
 - `companies.json` — your list of target companies
 - `poller.py` — fetches current open roles for each company, diffs against
-  `state.json`, and notifies you of anything new
+  `state.json`, notifies you of anything new, and logs it to `jobs_log.json`
 - `.github/workflows/poll.yml` — runs `poller.py` automatically every day
   via GitHub Actions (free for public/private repos within normal limits)
+- `docs/index.html` — a browsable dashboard of everything found, hosted
+  free via GitHub Pages
 
 ## 1. Fill in `companies.json`
 
@@ -82,6 +84,27 @@ useful for testing before you wire up notifications.
 Note: the **first run** for each company just records a baseline — it
 won't alert you on that run, since every currently-open role would look
 "new". You'll start getting alerts starting from the second run onward.
+
+## 4. Turn on the dashboard (GitHub Pages)
+
+1. In your repo, go to **Settings → Pages**.
+2. Under "Build and deployment" → Source, choose **Deploy from a branch**.
+3. Branch: `main`, folder: **`/docs`**. Save.
+4. GitHub gives you a URL like `https://<your-username>.github.io/<repo-name>/`
+   — that's your dashboard, live within a minute or two.
+
+**Important if your repo is private:** GitHub Pages on a private repo
+requires GitHub Pro (or Team/Enterprise) — free-tier accounts can only
+publish Pages sites from **public** repos. If you want to keep the repo
+private and are on the free plan, either upgrade, or skip Pages and just
+open `docs/index.html` locally in a browser after pulling the latest
+`docs/jobs_log.json` from the repo (`git pull`) — same dashboard, just not
+hosted online.
+
+The dashboard reads `docs/jobs_log.json`, which the workflow updates and
+commits every run alongside `state.json`. It's a rolling log (newest
+first, capped at the most recent 2000 postings) with search and a company
+filter, so it stays usable even once you've been running this a while.
 
 ## Running locally (optional, for testing)
 

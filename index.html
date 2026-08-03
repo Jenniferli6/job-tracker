@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Signal — Target Company Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0B0F14;
+    --surface: #121820;
+    --surface-2: #1A222C;
+    --border: #232D39;
+    --text: #E4E9EF;
+    --text-dim: #8291A0;
+    --text-faint: #4C5A68;
+    --accent: #6EE7B7;
+    --accent-dim: #3A5B4D;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+  }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 40px 24px 80px; }
+
+  header { margin-bottom: 32px; }
+  .eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: var(--accent);
+    letter-spacing: 0.08em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .pulse {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 0 0 rgba(110,231,183,0.6);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(110,231,183,0.5); }
+    70% { box-shadow: 0 0 0 8px rgba(110,231,183,0); }
+    100% { box-shadow: 0 0 0 0 rgba(110,231,183,0); }
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 6px;
+    letter-spacing: -0.01em;
+  }
+  .sub {
+    color: var(--text-dim);
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 28px 0;
+  }
+  .stat {
+    background: var(--surface);
+    padding: 16px 18px;
+  }
+  .stat-num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--accent);
+  }
+  .stat-label {
+    font-size: 12px;
+    color: var(--text-dim);
+    margin-top: 2px;
+  }
+
+  .controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+  }
+  input[type=text], select {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    outline: none;
+  }
+  input[type=text] { flex: 1; min-width: 200px; }
+  input[type=text]:focus, select:focus { border-color: var(--accent-dim); }
+  select { cursor: pointer; }
+
+  .date-group { margin-bottom: 28px; }
+  .date-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: var(--text-faint);
+    letter-spacing: 0.06em;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .job-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    transition: border-color 0.15s ease, transform 0.15s ease;
+  }
+  .job-card:hover {
+    border-color: var(--accent-dim);
+    transform: translateX(2px);
+  }
+  .job-main { min-width: 0; }
+  .job-title {
+    color: var(--text);
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .job-meta {
+    font-size: 13px;
+    color: var(--text-dim);
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .job-company {
+    font-family: 'IBM Plex Mono', monospace;
+    color: var(--accent);
+    font-size: 12px;
+    background: rgba(110,231,183,0.08);
+    border: 1px solid var(--accent-dim);
+    padding: 2px 8px;
+    border-radius: 20px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .empty {
+    text-align: center;
+    padding: 80px 20px;
+    color: var(--text-dim);
+  }
+  .empty-icon {
+    font-family: 'IBM Plex Mono', monospace;
+    color: var(--text-faint);
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+  .empty-title { font-size: 16px; color: var(--text); margin-bottom: 6px; }
+
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--text-faint);
+  }
+
+  @media (max-width: 600px) {
+    .stats { grid-template-columns: 1fr; }
+    .job-card { flex-direction: column; }
+    .job-company { margin-top: 0; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="eyebrow"><span class="pulse"></span>MONITORING · DAILY</div>
+      <h1>Job Signal</h1>
+      <p class="sub">New postings across your target company list, newest first.</p>
+    </header>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-num" id="stat-total">—</div>
+        <div class="stat-label">postings logged</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num" id="stat-today">—</div>
+        <div class="stat-label">found on latest run</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num" id="stat-companies">—</div>
+        <div class="stat-label">companies represented</div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search title or company...">
+      <select id="companyFilter"><option value="">All companies</option></select>
+    </div>
+
+    <div id="feed"></div>
+  </div>
+
+  <script>
+    let allJobs = [];
+
+    async function loadJobs() {
+      try {
+        const res = await fetch('jobs_log.json?_=' + Date.now());
+        allJobs = await res.json();
+      } catch (e) {
+        allJobs = [];
+      }
+      populateCompanyFilter();
+      render();
+    }
+
+    function populateCompanyFilter() {
+      const sel = document.getElementById('companyFilter');
+      const companies = [...new Set(allJobs.map(j => j.company))].sort();
+      companies.forEach(c => {
+        const opt = document.createElement('option');
+        opt.value = c;
+        opt.textContent = c;
+        sel.appendChild(opt);
+      });
+    }
+
+    function render() {
+      const searchTerm = document.getElementById('search').value.toLowerCase();
+      const companyFilter = document.getElementById('companyFilter').value;
+
+      let filtered = allJobs.filter(j => {
+        const matchesSearch = !searchTerm ||
+          j.title.toLowerCase().includes(searchTerm) ||
+          j.company.toLowerCase().includes(searchTerm);
+        const matchesCompany = !companyFilter || j.company === companyFilter;
+        return matchesSearch && matchesCompany;
+      });
+
+      document.getElementById('stat-total').textContent = allJobs.length;
+      const latestDate = allJobs[0]?.date_found;
+      document.getElementById('stat-today').textContent =
+        allJobs.filter(j => j.date_found === latestDate).length || 0;
+      document.getElementById('stat-companies').textContent =
+        new Set(allJobs.map(j => j.company)).size;
+
+      const feed = document.getElementById('feed');
+      feed.innerHTML = '';
+
+      if (filtered.length === 0) {
+        feed.innerHTML = `
+          <div class="empty">
+            <div class="empty-icon">// no results</div>
+            <div class="empty-title">${allJobs.length === 0 ? 'No postings logged yet' : 'Nothing matches your filters'}</div>
+            <div>${allJobs.length === 0 ? 'The dashboard fills in after the poller\\'s next run finds something new.' : 'Try a different search or company.'}</div>
+          </div>`;
+        return;
+      }
+
+      const byDate = {};
+      filtered.forEach(j => {
+        (byDate[j.date_found] = byDate[j.date_found] || []).push(j);
+      });
+
+      Object.keys(byDate).sort().reverse().forEach(date => {
+        const group = document.createElement('div');
+        group.className = 'date-group';
+        const label = document.createElement('div');
+        label.className = 'date-label';
+        label.textContent = date + ' — ' + byDate[date].length + ' posting' + (byDate[date].length === 1 ? '' : 's');
+        group.appendChild(label);
+
+        byDate[date].forEach(j => {
+          const card = document.createElement('a');
+          card.className = 'job-card';
+          card.href = j.url || '#';
+          card.target = '_blank';
+          card.rel = 'noopener';
+          card.innerHTML = `
+            <div class="job-main">
+              <div class="job-title">${escapeHtml(j.title)}</div>
+              <div class="job-meta">${j.location ? escapeHtml(j.location) : 'Location not listed'}</div>
+            </div>
+            <div class="job-company">${escapeHtml(j.company)}</div>
+          `;
+          group.appendChild(card);
+        });
+        feed.appendChild(group);
+      });
+    }
+
+    function escapeHtml(str) {
+      const div = document.createElement('div');
+      div.textContent = str || '';
+      return div.innerHTML;
+    }
+
+    document.getElementById('search').addEventListener('input', render);
+    document.getElementById('companyFilter').addEventListener('change', render);
+
+    loadJobs();
+  </script>
+
+  <footer>tracking companies via Greenhouse / Lever / Ashby / custom career pages · updates daily via GitHub Actions</footer>
+</body>
+</html>
