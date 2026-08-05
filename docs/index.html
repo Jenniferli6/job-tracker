@@ -369,11 +369,15 @@
       return (job.location || '').trim();
     }
 
+    function hasStateAbbrev(loc, abbrev) {
+      const re = new RegExp(`(?:[,;/|]\\s*)${abbrev}(?:\\s|;|,|\\)|\\/|\\||$|-)`, 'i');
+      return re.test(loc);
+    }
+
     function isCaliforniaLocation(loc) {
       const l = loc.toLowerCase();
       if (CA_MARKERS.some(m => l.includes(m))) return true;
-      if (/\bca\b/.test(l) || l.includes(', ca') || l.includes('; ca') ||
-          l.includes('/ ca') || l.includes('| ca')) return true;
+      if (hasStateAbbrev(loc, 'ca')) return true;
       return false;
     }
 
