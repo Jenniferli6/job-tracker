@@ -116,6 +116,70 @@ python poller.py
 Set the same environment variables (`SMTP_HOST`, etc.) in your shell if you
 want to test notifications locally.
 
+## 5. Application automation (optional, local only)
+
+`apply.py` works through the dashboard's job list (both "Target Company
+Jobs" and "Interested Roles") in batches, newest first, and semi-automates
+applying: it opens a real visible browser, attaches your resume, fills in
+whatever it can match from `applicant_profile.json`, and stops right
+before Submit so you can review and send it yourself. It's local only —
+it needs a real browser and you present to answer prompts, so it's not
+part of the GitHub Actions workflow.
+
+Setup:
+
+```bash
+pip install playwright
+playwright install chromium
+```
+
+Create `applicant_profile.json` in the repo root (already gitignored —
+it holds your contact info and resume path, never commit it):
+
+```json
+{
+  "first_name": "...", "last_name": "...", "full_name": "...",
+  "email": "...", "phone": "...", "location": "City, ST",
+  "resume_path": "/absolute/path/to/resume.pdf",
+  "linkedin_url": "...", "github_url": "...",
+  "work_authorization": "Authorized to work in the US, no sponsorship needed",
+  "eeo_response": "decline",
+  "salary_expectation": null,
+  "learned_answers": {}
+}
+```
+
+Run:
+
+```bash
+python apply.py            # batch of 30, newest first
+python apply.py --batch 10
+```
+
+For each job it: navigates to the posting, attaches your resume, fills
+matching fields (name/email/phone/location/LinkedIn/GitHub/work
+authorization), tries to select "decline to answer" on EEO questions, and
+pauses in the terminal for anything else required that it can't map —
+salary/comp questions always pause fresh since there's no fixed answer,
+everything else gets saved to `learned_answers` so it doesn't ask again.
+
+Once a job is filled, review it in the browser, then answer the prompt:
+`[Enter]` if you submitted it, `s` if you filled it but didn't submit,
+`p` if it needs info you don't have right now, `x` to skip the job, or
+`q` to stop the batch. This gets recorded in `application_status.json`
+(and a `docs/` copy), which the dashboard reads to show an "Application
+Status" column — blank for anything not yet attempted. Already-recorded
+jobs are automatically skipped in future batches.
+
+Only Greenhouse, Lever, and Ashby postings are supported — these render
+their forms with JavaScript, so the field-matching is best-effort and
+markup varies by company; expect occasional pauses for fields it doesn't
+recognize on the first run against a new company's form.
+
+Nothing gets committed automatically — `git add`/commit/push
+`application_status.json` and `docs/application_status.json` yourself,
+same as the other dashboard files.
+
 ## Extending
 
 - Add more ATS fetchers (Workday, SmartRecruiters, BambooHR) by writing a

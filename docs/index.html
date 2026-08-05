@@ -217,6 +217,12 @@
     max-width: 240px;
   }
   .col-category { color: var(--text-dim); }
+  .col-status {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--text-dim);
+    white-space: nowrap;
+  }
   .col-ats {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 11px;
@@ -347,7 +353,20 @@
     let allCompanies = [];
     let allRoles = [];
     let rolesScannedAt = null;
+    let applicationStatus = {};
     let activeView = 'jobs';
+
+    const STATUS_LABELS = {
+      info_filled: 'Info Filled',
+      submitted: 'Submitted',
+      pending_new_info: 'Pending New Info',
+      skipped: 'Skipped',
+    };
+
+    function statusLabel(url) {
+      const entry = applicationStatus[url];
+      return entry ? (STATUS_LABELS[entry.status] || entry.status) : '';
+    }
 
     function isCustomAlert(job) {
       return job.title.includes('Careers page content changed');
@@ -418,7 +437,7 @@
 
     async function loadData() {
       const cacheBust = '?_=' + Date.now();
-      const [jobsResult, companiesResult, rolesResult] = await Promise.allSettled([
+      const [jobsResult, companiesResult, rolesResult, statusResult] = await Promise.allSettled([
         fetch('jobs_log.json' + cacheBust).then(res => {
           if (!res.ok) throw new Error('Could not load jobs');
           return res.json();
@@ -430,12 +449,17 @@
         fetch('roles_snapshot.json' + cacheBust).then(res => {
           if (!res.ok) throw new Error('Could not load roles');
           return res.json();
+        }),
+        fetch('application_status.json' + cacheBust).then(res => {
+          if (!res.ok) throw new Error('Could not load application status');
+          return res.json();
         })
       ]);
       allJobs = jobsResult.status === 'fulfilled' ? jobsResult.value : [];
       allCompanies = companiesResult.status === 'fulfilled' ? companiesResult.value : [];
       allRoles = rolesResult.status === 'fulfilled' ? (rolesResult.value.roles || []) : [];
       rolesScannedAt = rolesResult.status === 'fulfilled' ? rolesResult.value.scanned_at : null;
+      applicationStatus = statusResult.status === 'fulfilled' ? statusResult.value : {};
       populateCompanyFilter();
       populateDateFilter();
       populateCompanyListFilters();
@@ -540,6 +564,7 @@
               <th>Role</th>
               <th>Location</th>
               <th>Posting Date</th>
+              <th>Application Status</th>
             </tr>
           </thead>
           <tbody></tbody>
@@ -555,7 +580,8 @@
           <td class="col-company">${escapeHtml(j.company)}</td>
           <td class="col-role${isCustom ? ' custom-alert' : ''}">${escapeHtml(j.title)}</td>
           <td class="col-location">${loc ? escapeHtml(loc) : '<span class="col-date">—</span>'}</td>
-          <td class="col-date">${escapeHtml(j.date_found)}</td>`;
+          <td class="col-date">${escapeHtml(j.date_found)}</td>
+          <td class="col-status">${escapeHtml(statusLabel(j.url))}</td>`;
         if (j.url) {
           tr.addEventListener('click', () => window.open(j.url, '_blank', 'noopener'));
         }
@@ -653,6 +679,7 @@
               <th>Title</th>
               <th>Location</th>
               <th>Platform</th>
+              <th>Application Status</th>
             </tr>
           </thead>
           <tbody></tbody>
@@ -668,7 +695,8 @@
           <td class="col-category">${escapeHtml(r.matched_role)}</td>
           <td class="col-role">${escapeHtml(r.title)}</td>
           <td class="col-location">${loc ? escapeHtml(loc) : '<span class="col-date">—</span>'}</td>
-          <td class="col-ats">${escapeHtml(r.platform)}</td>`;
+          <td class="col-ats">${escapeHtml(r.platform)}</td>
+          <td class="col-status">${escapeHtml(statusLabel(r.url))}</td>`;
         if (r.url) {
           tr.addEventListener('click', () => window.open(r.url, '_blank', 'noopener'));
         }
