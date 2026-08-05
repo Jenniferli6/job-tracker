@@ -1,0 +1,44 @@
+{
+  "title_patterns": [
+    {
+      "label": "Data Scientist",
+      "match": ["data scientist"]
+    },
+    {
+      "label": "Data Analyst",
+      "match": ["data analyst"]
+    },
+    {
+      "label": "Analytics Engineer",
+      "match": ["analytics engineer"]
+    },
+    {
+      "label": "Machine Learning Engineer",
+      "match": ["machine learning engineer", "ml engineer", "mle"]
+    },
+    {
+      "label": "AI Engineer",
+      "match": ["ai engineer", "artificial intelligence engineer"]
+    },
+    {
+      "label": "Member of Technical Staff",
+      "match": ["member of technical staff", "member, technical staff"]
+    },
+    {
+      "label": "Forward Deployed Engineer",
+      "match": ["forward deployed engineer", "forward-deployed engineer", "fde"]
+    },
+    {
+      "label": "Data & AI Consultant",
+      "match": ["data & ai consultant", "data and ai consultant", "data/ai consultant"]
+    },
+    {
+      "label": "Applied Scientist",
+      "match": ["applied scientist"]
+    },
+    {
+      "label": "Research Engineer",
+      "match": ["research engineer"]
+    }
+  ]
+}

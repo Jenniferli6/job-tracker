@@ -32,10 +32,13 @@ jobs:
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 
+      - name: Run role scanner
+        run: python role_scanner.py
+
       - name: Commit updated state
         run: |
           git config user.name "job-poller-bot"
           git config user.email "actions@github.com"
-          git add state.json jobs_log.json docs/jobs_log.json docs/companies.json
+          git add state.json jobs_log.json docs/jobs_log.json docs/companies.json roles_snapshot.json docs/roles_snapshot.json
           git diff --staged --quiet || git commit -m "Update job state [skip ci]"
           git push

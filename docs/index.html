@@ -253,6 +253,12 @@
     margin-bottom: 8px;
   }
   .empty-title { font-size: 16px; color: var(--text); margin-bottom: 6px; }
+  .scan-note {
+    margin-top: 12px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--text-faint);
+  }
 
   footer {
     margin-top: 48px;
@@ -282,6 +288,7 @@
     <nav class="tabs" aria-label="Dashboard views">
       <button class="tab active" type="button" data-view="jobs">Jobs</button>
       <button class="tab" type="button" data-view="companies">Companies</button>
+      <button class="tab" type="button" data-view="roles">Roles</button>
     </nav>
 
     <div class="stats">
@@ -320,13 +327,26 @@
       <select id="atsFilter"><option value="">All tracking types</option></select>
     </div>
 
+    <div class="controls" id="rolesControls" hidden>
+      <input type="text" id="rolesSearch" placeholder="Search title or company...">
+      <select id="roleLabelFilter"><option value="">All roles</option></select>
+      <select id="rolesLocationFilter">
+        <option value="">All locations</option>
+        <option value="california">California</option>
+        <option value="us">United States</option>
+      </select>
+    </div>
+
     <div id="feed"></div>
     <div id="companyList" hidden></div>
+    <div id="rolesFeed" hidden></div>
   </div>
 
   <script>
     let allJobs = [];
     let allCompanies = [];
+    let allRoles = [];
+    let rolesScannedAt = null;
     let activeView = 'jobs';
 
     function isCustomAlert(job) {
@@ -369,15 +389,11 @@
       return (job.location || '').trim();
     }
 
-    function hasStateAbbrev(loc, abbrev) {
-      const re = new RegExp(`(?:[,;/|]\\s*)${abbrev}(?:\\s|;|,|\\)|\\/|\\||$|-)`, 'i');
-      return re.test(loc);
-    }
-
     function isCaliforniaLocation(loc) {
       const l = loc.toLowerCase();
       if (CA_MARKERS.some(m => l.includes(m))) return true;
-      if (hasStateAbbrev(loc, 'ca')) return true;
+      if (/\bca\b/.test(l) || l.includes(', ca') || l.includes('; ca') ||
+          l.includes('/ ca') || l.includes('| ca')) return true;
       return false;
     }
 
@@ -402,7 +418,7 @@
 
     async function loadData() {
       const cacheBust = '?_=' + Date.now();
-      const [jobsResult, companiesResult] = await Promise.allSettled([
+      const [jobsResult, companiesResult, rolesResult] = await Promise.allSettled([
         fetch('jobs_log.json' + cacheBust).then(res => {
           if (!res.ok) throw new Error('Could not load jobs');
           return res.json();
@@ -410,13 +426,20 @@
         fetch('companies.json' + cacheBust).then(res => {
           if (!res.ok) throw new Error('Could not load companies');
           return res.json();
+        }),
+        fetch('roles_snapshot.json' + cacheBust).then(res => {
+          if (!res.ok) throw new Error('Could not load roles');
+          return res.json();
         })
       ]);
       allJobs = jobsResult.status === 'fulfilled' ? jobsResult.value : [];
       allCompanies = companiesResult.status === 'fulfilled' ? companiesResult.value : [];
+      allRoles = rolesResult.status === 'fulfilled' ? (rolesResult.value.roles || []) : [];
+      rolesScannedAt = rolesResult.status === 'fulfilled' ? rolesResult.value.scanned_at : null;
       populateCompanyFilter();
       populateDateFilter();
       populateCompanyListFilters();
+      populateRoleFilters();
       render();
     }
 
@@ -447,6 +470,10 @@
       addOptions('atsFilter', [...new Set(allCompanies.map(c => c.ats).filter(Boolean))].sort());
     }
 
+    function populateRoleFilters() {
+      addOptions('roleLabelFilter', [...new Set(allRoles.map(r => r.matched_role).filter(Boolean))].sort());
+    }
+
     function addOptions(id, values) {
       const sel = document.getElementById(id);
       values.forEach(value => {
@@ -460,6 +487,10 @@
     function render() {
       if (activeView === 'companies') {
         renderCompanies();
+        return;
+      }
+      if (activeView === 'roles') {
+        renderRoles();
         return;
       }
       const searchTerm = document.getElementById('search').value.toLowerCase();
@@ -578,6 +609,82 @@
       container.appendChild(table);
     }
 
+    function renderRoles() {
+      const searchTerm = document.getElementById('rolesSearch').value.toLowerCase();
+      const labelFilter = document.getElementById('roleLabelFilter').value;
+      const locationFilter = document.getElementById('rolesLocationFilter').value;
+
+      const filtered = allRoles.filter(r => {
+        const haystack = [r.title, r.company, locationText(r)].join(' ').toLowerCase();
+        const matchesSearch = !searchTerm || haystack.includes(searchTerm);
+        const matchesLabel = !labelFilter || r.matched_role === labelFilter;
+        const matchesLoc = matchesLocation(r, locationFilter);
+        return matchesSearch && matchesLabel && matchesLoc;
+      });
+
+      setStats(
+        filtered.length,
+        new Set(filtered.map(r => r.company)).size,
+        new Set(filtered.map(r => r.matched_role)).size,
+        'open roles found', 'companies represented', 'role types'
+      );
+
+      const container = document.getElementById('rolesFeed');
+      container.innerHTML = '';
+
+      if (filtered.length === 0) {
+        container.innerHTML = `
+          <div class="empty">
+            <div class="empty-icon">// no results</div>
+            <div class="empty-title">${allRoles.length === 0 ? 'No role scan data yet' : 'Nothing matches your filters'}</div>
+            <div>${allRoles.length === 0 ? 'The dashboard fills in after the role scanner\'s next run.' : 'Try a different search or filter.'}</div>
+          </div>`;
+        return;
+      }
+
+      const table = document.createElement('div');
+      table.className = 'table-wrap';
+      table.innerHTML = `
+        <table>
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Role</th>
+              <th>Title</th>
+              <th>Location</th>
+              <th>Platform</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>`;
+      const tbody = table.querySelector('tbody');
+
+      filtered.forEach(r => {
+        const tr = document.createElement('tr');
+        tr.className = 'job-row';
+        const loc = locationText(r);
+        tr.innerHTML = `
+          <td class="col-company">${escapeHtml(r.company)}</td>
+          <td class="col-category">${escapeHtml(r.matched_role)}</td>
+          <td class="col-role">${escapeHtml(r.title)}</td>
+          <td class="col-location">${loc ? escapeHtml(loc) : '<span class="col-date">—</span>'}</td>
+          <td class="col-ats">${escapeHtml(r.platform)}</td>`;
+        if (r.url) {
+          tr.addEventListener('click', () => window.open(r.url, '_blank', 'noopener'));
+        }
+        tbody.appendChild(tr);
+      });
+
+      container.appendChild(table);
+
+      if (rolesScannedAt) {
+        const note = document.createElement('div');
+        note.className = 'scan-note';
+        note.textContent = `Last scanned: ${new Date(rolesScannedAt).toLocaleString()}`;
+        container.appendChild(note);
+      }
+    }
+
     function setStats(first, second, third, firstLabel, secondLabel, thirdLabel) {
       document.getElementById('stat-total').textContent = first;
       document.getElementById('stat-today').textContent = second;
@@ -609,14 +716,19 @@
     document.getElementById('companySearch').addEventListener('input', render);
     document.getElementById('categoryFilter').addEventListener('change', render);
     document.getElementById('atsFilter').addEventListener('change', render);
+    document.getElementById('rolesSearch').addEventListener('input', render);
+    document.getElementById('roleLabelFilter').addEventListener('change', render);
+    document.getElementById('rolesLocationFilter').addEventListener('change', render);
     document.querySelectorAll('.tab').forEach(tab => {
       tab.addEventListener('click', () => {
         activeView = tab.dataset.view;
         document.querySelectorAll('.tab').forEach(item => item.classList.toggle('active', item === tab));
         document.getElementById('jobControls').hidden = activeView !== 'jobs';
         document.getElementById('companyControls').hidden = activeView !== 'companies';
+        document.getElementById('rolesControls').hidden = activeView !== 'roles';
         document.getElementById('feed').hidden = activeView !== 'jobs';
         document.getElementById('companyList').hidden = activeView !== 'companies';
+        document.getElementById('rolesFeed').hidden = activeView !== 'roles';
         render();
       });
     });
