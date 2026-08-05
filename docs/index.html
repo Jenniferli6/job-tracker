@@ -211,6 +211,11 @@
     color: var(--text-dim);
     white-space: nowrap;
   }
+  .col-location {
+    color: var(--text-dim);
+    font-size: 13px;
+    max-width: 240px;
+  }
   .col-category { color: var(--text-dim); }
   .col-ats {
     font-family: 'IBM Plex Mono', monospace;
@@ -298,6 +303,11 @@
       <input type="text" id="search" placeholder="Search title or company...">
       <select id="companyFilter"><option value="">All companies</option></select>
       <select id="dateFilter"><option value="">All dates</option></select>
+      <select id="locationFilter">
+        <option value="">All locations</option>
+        <option value="california" selected>California</option>
+        <option value="us">United States</option>
+      </select>
       <label class="filter-check">
         <input type="checkbox" id="hideCustom" checked>
         Hide page-change alerts
@@ -321,6 +331,69 @@
 
     function isCustomAlert(job) {
       return job.title.includes('Careers page content changed');
+    }
+
+    const US_STATES = [
+      'alabama', 'alaska', 'arizona', 'arkansas', 'california', 'colorado',
+      'connecticut', 'delaware', 'florida', 'georgia', 'hawaii', 'idaho',
+      'illinois', 'indiana', 'iowa', 'kansas', 'kentucky', 'louisiana',
+      'maine', 'maryland', 'massachusetts', 'michigan', 'minnesota',
+      'mississippi', 'missouri', 'montana', 'nebraska', 'nevada',
+      'new hampshire', 'new jersey', 'new mexico', 'new york',
+      'north carolina', 'north dakota', 'ohio', 'oklahoma', 'oregon',
+      'pennsylvania', 'rhode island', 'south carolina', 'south dakota',
+      'tennessee', 'texas', 'utah', 'vermont', 'virginia', 'washington',
+      'west virginia', 'wisconsin', 'wyoming', 'district of columbia',
+    ];
+
+    const CA_MARKERS = [
+      'california', 'san francisco', 'los angeles', 'palo alto',
+      'mountain view', 'sunnyvale', 'cupertino', 'menlo park', 'san jose',
+      'oakland', 'santa clara', 'irvine', 'san diego', 'pasadena', 'fremont',
+      'redwood city', 'san mateo', 'berkeley', 'sacramento', 'bay area',
+      'silicon valley', 'sf bay', 'california - sf',
+    ];
+
+    const US_CITIES = [
+      'san francisco', 'new york', 'seattle', 'austin', 'boston', 'chicago',
+      'denver', 'los angeles', 'palo alto', 'mountain view', 'sunnyvale',
+      'cupertino', 'menlo park', 'redmond', 'bellevue', 'portland', 'atlanta',
+      'miami', 'dallas', 'houston', 'phoenix', 'san diego', 'san jose',
+      'oakland', 'santa clara', 'fremont', 'irvine', 'pasadena', 'boulder',
+      'nashville', 'detroit', 'minneapolis', 'philadelphia', 'pittsburgh',
+      'raleigh', 'salt lake city', 'san antonio', 'tampa', 'bay area',
+      'silicon valley', 'nyc',
+    ];
+
+    function locationText(job) {
+      return (job.location || '').trim();
+    }
+
+    function isCaliforniaLocation(loc) {
+      const l = loc.toLowerCase();
+      if (CA_MARKERS.some(m => l.includes(m))) return true;
+      if (/\bca\b/.test(l) || l.includes(', ca') || l.includes('; ca') ||
+          l.includes('/ ca') || l.includes('| ca')) return true;
+      return false;
+    }
+
+    function isUnitedStatesLocation(loc) {
+      const l = loc.toLowerCase();
+      if (/\b(united states|united states of america|usa|u\.s\.)\b/.test(l)) return true;
+      if (/\b(us remote|us-remote|remote.*\b(us|usa)\b|\b(us|usa)\b.*remote)\b/.test(l)) return true;
+      if (US_STATES.some(s => l.includes(s))) return true;
+      if (US_CITIES.some(c => l.includes(c))) return true;
+      if (/\b[a-z .]+,\s*[a-z]{2}(\s|;|,|\)|\/|\||$|-)/.test(l)) return true;
+      return isCaliforniaLocation(loc);
+    }
+
+    function matchesLocation(job, filter) {
+      if (!filter) return true;
+      const loc = locationText(job);
+      if (!loc) return false;
+      if (filter === 'california') return isCaliforniaLocation(loc);
+      if (filter === 'us') return isUnitedStatesLocation(loc);
+      return true;
     }
 
     async function loadData() {
@@ -388,24 +461,25 @@
       const searchTerm = document.getElementById('search').value.toLowerCase();
       const companyFilter = document.getElementById('companyFilter').value;
       const dateFilter = document.getElementById('dateFilter').value;
+      const locationFilter = document.getElementById('locationFilter').value;
       const hideCustom = document.getElementById('hideCustom').checked;
 
       let filtered = allJobs.filter(j => {
-        const matchesSearch = !searchTerm ||
-          j.title.toLowerCase().includes(searchTerm) ||
-          j.company.toLowerCase().includes(searchTerm);
+        const haystack = [j.title, j.company, locationText(j)].join(' ').toLowerCase();
+        const matchesSearch = !searchTerm || haystack.includes(searchTerm);
         const matchesCompany = !companyFilter || j.company === companyFilter;
         const matchesDate = !dateFilter || j.date_found === dateFilter;
+        const matchesLoc = matchesLocation(j, locationFilter);
         const matchesCustom = !hideCustom || !isCustomAlert(j);
-        return matchesSearch && matchesCompany && matchesDate && matchesCustom;
+        return matchesSearch && matchesCompany && matchesDate && matchesLoc && matchesCustom;
       });
 
       const latestDate = allJobs[0]?.date_found;
       setStats(
-        allJobs.length,
-        allJobs.filter(j => j.date_found === latestDate).length || 0,
-        new Set(allJobs.map(j => j.company)).size,
-        'postings logged', 'found on latest run', 'companies represented'
+        filtered.length,
+        filtered.filter(j => j.date_found === latestDate).length || 0,
+        new Set(filtered.map(j => j.company)).size,
+        'matching postings', 'found on latest run', 'companies represented'
       );
 
       const feed = document.getElementById('feed');
@@ -429,6 +503,7 @@
             <tr>
               <th>Company</th>
               <th>Role</th>
+              <th>Location</th>
               <th>Posting Date</th>
             </tr>
           </thead>
@@ -440,9 +515,11 @@
         const isCustom = isCustomAlert(j);
         const tr = document.createElement('tr');
         tr.className = 'job-row';
+        const loc = locationText(j);
         tr.innerHTML = `
           <td class="col-company">${escapeHtml(j.company)}</td>
           <td class="col-role${isCustom ? ' custom-alert' : ''}">${escapeHtml(j.title)}</td>
+          <td class="col-location">${loc ? escapeHtml(loc) : '<span class="col-date">—</span>'}</td>
           <td class="col-date">${escapeHtml(j.date_found)}</td>`;
         if (j.url) {
           tr.addEventListener('click', () => window.open(j.url, '_blank', 'noopener'));
@@ -523,6 +600,7 @@
     document.getElementById('search').addEventListener('input', render);
     document.getElementById('companyFilter').addEventListener('change', render);
     document.getElementById('dateFilter').addEventListener('change', render);
+    document.getElementById('locationFilter').addEventListener('change', render);
     document.getElementById('hideCustom').addEventListener('change', render);
     document.getElementById('companySearch').addEventListener('input', render);
     document.getElementById('categoryFilter').addEventListener('change', render);
