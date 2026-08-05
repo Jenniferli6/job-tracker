@@ -330,6 +330,7 @@
     <div class="controls" id="rolesControls" hidden>
       <input type="text" id="rolesSearch" placeholder="Search title or company...">
       <select id="roleLabelFilter"><option value="">All roles</option></select>
+      <select id="rolesDateFilter"><option value="">All dates</option></select>
       <select id="rolesLocationFilter">
         <option value="">All locations</option>
         <option value="california">California</option>
@@ -440,6 +441,7 @@
       populateDateFilter();
       populateCompanyListFilters();
       populateRoleFilters();
+      populateRolesDateFilter();
       render();
     }
 
@@ -456,7 +458,7 @@
 
     function populateDateFilter() {
       const sel = document.getElementById('dateFilter');
-      const dates = [...new Set(allJobs.map(j => j.date_found))].sort().reverse();
+      const dates = [...new Set(allJobs.map(j => j.posted_date).filter(Boolean))].sort().reverse();
       dates.forEach(d => {
         const opt = document.createElement('option');
         opt.value = d;
@@ -472,6 +474,11 @@
 
     function populateRoleFilters() {
       addOptions('roleLabelFilter', [...new Set(allRoles.map(r => r.matched_role).filter(Boolean))].sort());
+    }
+
+    function populateRolesDateFilter() {
+      const dates = [...new Set(allRoles.map(r => r.posted_date).filter(Boolean))].sort().reverse();
+      addOptions('rolesDateFilter', dates);
     }
 
     function addOptions(id, values) {
@@ -503,7 +510,7 @@
         const haystack = [j.title, j.company, locationText(j)].join(' ').toLowerCase();
         const matchesSearch = !searchTerm || haystack.includes(searchTerm);
         const matchesCompany = !companyFilter || j.company === companyFilter;
-        const matchesDate = !dateFilter || j.date_found === dateFilter;
+        const matchesDate = !dateFilter || j.posted_date === dateFilter;
         const matchesLoc = matchesLocation(j, locationFilter);
         const matchesCustom = !hideCustom || !isCustomAlert(j);
         return matchesSearch && matchesCompany && matchesDate && matchesLoc && matchesCustom;
@@ -555,7 +562,7 @@
           <td class="col-company">${escapeHtml(j.company)}</td>
           <td class="col-role${isCustom ? ' custom-alert' : ''}">${escapeHtml(j.title)}</td>
           <td class="col-location">${loc ? escapeHtml(loc) : '<span class="col-date">—</span>'}</td>
-          <td class="col-date">${escapeHtml(j.date_found)}</td>`;
+          <td class="col-date">${j.posted_date ? escapeHtml(j.posted_date) : '—'}</td>`;
         if (j.url) {
           tr.addEventListener('click', () => window.open(j.url, '_blank', 'noopener'));
         }
@@ -612,14 +619,16 @@
     function renderRoles() {
       const searchTerm = document.getElementById('rolesSearch').value.toLowerCase();
       const labelFilter = document.getElementById('roleLabelFilter').value;
+      const dateFilter = document.getElementById('rolesDateFilter').value;
       const locationFilter = document.getElementById('rolesLocationFilter').value;
 
       const filtered = allRoles.filter(r => {
         const haystack = [r.title, r.company, locationText(r)].join(' ').toLowerCase();
         const matchesSearch = !searchTerm || haystack.includes(searchTerm);
         const matchesLabel = !labelFilter || r.matched_role === labelFilter;
+        const matchesDate = !dateFilter || r.posted_date === dateFilter;
         const matchesLoc = matchesLocation(r, locationFilter);
-        return matchesSearch && matchesLabel && matchesLoc;
+        return matchesSearch && matchesLabel && matchesDate && matchesLoc;
       });
 
       setStats(
@@ -652,6 +661,7 @@
               <th>Role</th>
               <th>Title</th>
               <th>Location</th>
+              <th>Posted</th>
               <th>Platform</th>
             </tr>
           </thead>
@@ -668,6 +678,7 @@
           <td class="col-category">${escapeHtml(r.matched_role)}</td>
           <td class="col-role">${escapeHtml(r.title)}</td>
           <td class="col-location">${loc ? escapeHtml(loc) : '<span class="col-date">—</span>'}</td>
+          <td class="col-date">${r.posted_date ? escapeHtml(r.posted_date) : '—'}</td>
           <td class="col-ats">${escapeHtml(r.platform)}</td>`;
         if (r.url) {
           tr.addEventListener('click', () => window.open(r.url, '_blank', 'noopener'));
@@ -718,6 +729,7 @@
     document.getElementById('atsFilter').addEventListener('change', render);
     document.getElementById('rolesSearch').addEventListener('input', render);
     document.getElementById('roleLabelFilter').addEventListener('change', render);
+    document.getElementById('rolesDateFilter').addEventListener('change', render);
     document.getElementById('rolesLocationFilter').addEventListener('change', render);
     document.querySelectorAll('.tab').forEach(tab => {
       tab.addEventListener('click', () => {

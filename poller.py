@@ -11,6 +11,7 @@ Run manually:  python poller.py
 Run on a schedule via the included GitHub Actions workflow.
 """
 
+import datetime
 import json
 import os
 import smtplib
@@ -33,7 +34,9 @@ MAX_LOG_ENTRIES = 2000  # trim oldest beyond this so the log/dashboard stays man
 
 
 # ---------- Fetchers: one per ATS, each returns a list of dicts ----------
-# Each job dict: {"id": str, "title": str, "url": str, "location": str}
+# Each job dict: {"id": str, "title": str, "url": str, "location": str, "posted_date": str}
+# posted_date is an ISO 8601 date (YYYY-MM-DD) taken from the ATS's own
+# "first published" timestamp, or "" if the source doesn't provide one.
 
 def fetch_greenhouse(slug):
     url = f"https://boards-api.greenhouse.io/v1/boards/{slug}/jobs?content=false"
@@ -47,6 +50,7 @@ def fetch_greenhouse(slug):
             "title": j.get("title", "Untitled"),
             "url": j.get("absolute_url", ""),
             "location": (j.get("location") or {}).get("name", ""),
+            "posted_date": (j.get("first_published") or "")[:10],
         })
     return jobs
 
@@ -58,11 +62,16 @@ def fetch_lever(slug):
     data = r.json()
     jobs = []
     for j in data:
+        created_at = j.get("createdAt")
+        posted_date = ""
+        if created_at:
+            posted_date = datetime.date.fromtimestamp(created_at / 1000).isoformat()
         jobs.append({
             "id": str(j.get("id")),
             "title": j.get("text", "Untitled"),
             "url": j.get("hostedUrl", ""),
             "location": (j.get("categories") or {}).get("location", ""),
+            "posted_date": posted_date,
         })
     return jobs
 
@@ -79,6 +88,7 @@ def fetch_ashby(slug):
             "title": j.get("title", "Untitled"),
             "url": j.get("jobUrl", ""),
             "location": j.get("location", ""),
+            "posted_date": (j.get("publishedAt") or "")[:10],
         })
     return jobs
 
@@ -94,6 +104,7 @@ def fetch_custom(url):
         "title": "Careers page content changed — check manually",
         "url": url,
         "location": "",
+        "posted_date": "",
     }]
 
 
@@ -148,7 +159,6 @@ def sync_dashboard_companies(companies):
 def append_to_log(new_by_company):
     """Append newly found postings to jobs_log.json (and a copy under
     docs/ for GitHub Pages), newest first, trimmed to MAX_LOG_ENTRIES."""
-    import datetime
     today = datetime.date.today().isoformat()
 
     existing = []
@@ -164,6 +174,7 @@ def append_to_log(new_by_company):
                 "title": j.get("title", ""),
                 "location": j.get("location", ""),
                 "url": j.get("url", ""),
+                "posted_date": j.get("posted_date", ""),
             })
 
     combined = new_entries + existing  # newest first

@@ -96,6 +96,7 @@ def scan_board(board, patterns):
             "platform": board["ats"],
             "matched_role": label,
             "job_id": job.get("id", ""),
+            "posted_date": job.get("posted_date", ""),
         })
     return matches
 
