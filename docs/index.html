@@ -333,7 +333,7 @@
       <select id="rolesDateFilter"><option value="">All dates</option></select>
       <select id="rolesLocationFilter">
         <option value="">All locations</option>
-        <option value="california">California</option>
+        <option value="california" selected>California</option>
         <option value="us">United States</option>
       </select>
     </div>
@@ -631,11 +631,12 @@
         return matchesSearch && matchesLabel && matchesDate && matchesLoc;
       });
 
+      const latestScanDate = rolesScannedAt ? rolesScannedAt.slice(0, 10) : null;
       setStats(
         filtered.length,
+        filtered.filter(r => r.posted_date === latestScanDate).length || 0,
         new Set(filtered.map(r => r.company)).size,
-        new Set(filtered.map(r => r.matched_role)).size,
-        'open roles found', 'companies represented', 'role types'
+        'open roles found', 'found on latest run', 'companies represented'
       );
 
       const container = document.getElementById('rolesFeed');
