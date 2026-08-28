@@ -1,13 +1,13 @@
 # Job Posting Tracker
 
-Polls your target companies' job boards on a schedule and emails/Slacks you
-when a new role goes up.
+Polls your target companies' job boards on a schedule and logs any new
+roles that go up.
 
 ## How it works
 
 - `companies.json` — your list of target companies
 - `poller.py` — fetches current open roles for each company, diffs against
-  `state.json`, notifies you of anything new, and logs it to `jobs_log.json`
+  `state.json`, and logs anything new to `jobs_log.json`
 - `.github/workflows/poll.yml` — runs `poller.py` automatically every day
   via GitHub Actions (free for public/private repos within normal limits)
 - `docs/index.html` — a browsable dashboard of everything found, hosted
@@ -52,40 +52,23 @@ or "ashby".
 
 If a company doesn't use one of these three, use `"ats": "custom"` with a
 `"url"` field pointing at their careers page. You'll get a "something
-changed" alert instead of specific new-role detail — good enough to know
-when to go look.
+changed" log entry instead of specific new-role detail — good enough to
+know when to go look.
 
-## 2. Set up notifications
-
-Pick one or both:
-
-**Email** — add these as repo secrets (Settings → Secrets and variables →
-Actions → New repository secret):
-- `SMTP_HOST`, `SMTP_PORT` (e.g. 587), `SMTP_USER`, `SMTP_PASS`, `EMAIL_TO`
-- For Gmail: use an [App Password](https://myaccount.google.com/apppasswords)
-  (not your regular password), host `smtp.gmail.com`, port `587`.
-
-**Slack** — add a repo secret `SLACK_WEBHOOK_URL` with an
-[incoming webhook URL](https://api.slack.com/messaging/webhooks) for a
-channel or DM to yourself.
-
-If neither is configured, results just print to the GitHub Actions log —
-useful for testing before you wire up notifications.
-
-## 3. Deploy
+## 2. Deploy
 
 1. Push this folder to a new GitHub repo (private is fine).
-2. Add your secrets (step 2 above).
-3. The workflow runs daily at 13:00 UTC. Adjust the cron schedule in
+2. The workflow runs daily at 13:00 UTC. Adjust the cron schedule in
    `.github/workflows/poll.yml` if you want a different time.
-4. To test immediately: go to the repo's **Actions** tab → "Job Alert
+3. To test immediately: go to the repo's **Actions** tab → "Job Alert
    Poller" → **Run workflow**.
 
 Note: the **first run** for each company just records a baseline — it
-won't alert you on that run, since every currently-open role would look
-"new". You'll start getting alerts starting from the second run onward.
+won't show up as "new" on that run, since every currently-open role would
+look new. You'll start seeing new postings logged starting from the
+second run onward.
 
-## 4. Turn on the dashboard (GitHub Pages)
+## 3. Turn on the dashboard (GitHub Pages)
 
 1. In your repo, go to **Settings → Pages**.
 2. Under "Build and deployment" → Source, choose **Deploy from a branch**.
@@ -112,9 +95,6 @@ filter, so it stays usable even once you've been running this a while.
 pip install requests
 python poller.py
 ```
-
-Set the same environment variables (`SMTP_HOST`, etc.) in your shell if you
-want to test notifications locally.
 
 ## Extending
 

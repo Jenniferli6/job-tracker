@@ -4,8 +4,7 @@ Job posting tracker.
 
 Reads companies.json, checks each company's job board (Greenhouse, Lever,
 Ashby, or a generic custom page), diffs against state.json to find newly
-posted roles, and sends a notification (email and/or Slack) if anything
-new shows up. Updates state.json in place.
+posted roles, and logs anything new. Updates state.json in place.
 
 Run manually:  python poller.py
 Run on a schedule via the included GitHub Actions workflow.
@@ -13,11 +12,8 @@ Run on a schedule via the included GitHub Actions workflow.
 
 import datetime
 import json
-import os
-import smtplib
 import sys
 import hashlib
-from email.mime.text import MIMEText
 from pathlib import Path
 
 import requests
@@ -190,36 +186,6 @@ def append_to_log(new_by_company):
 
 # ---------- Notifications ----------
 
-def send_email(subject, body):
-    host = os.environ.get("SMTP_HOST")
-    port = os.environ.get("SMTP_PORT")
-    user = os.environ.get("SMTP_USER")
-    password = os.environ.get("SMTP_PASS")
-    to_addr = os.environ.get("EMAIL_TO")
-    if not all([host, port, user, password, to_addr]):
-        return False
-
-    msg = MIMEText(body)
-    msg["Subject"] = subject
-    msg["From"] = user
-    msg["To"] = to_addr
-
-    with smtplib.SMTP(host, int(port)) as server:
-        server.starttls()
-        server.login(user, password)
-        server.sendmail(user, [to_addr], msg.as_string())
-    return True
-
-
-def send_slack(text):
-    webhook = os.environ.get("SLACK_WEBHOOK_URL")
-    if not webhook:
-        return False
-    r = requests.post(webhook, json={"text": text}, timeout=TIMEOUT)
-    r.raise_for_status()
-    return True
-
-
 def notify(new_by_company):
     if not new_by_company:
         return
@@ -232,12 +198,7 @@ def notify(new_by_company):
             lines.append(f"  - {j['title']}{loc}\n    {j['url']}")
     body = "New job postings found:\n" + "\n".join(lines)
 
-    sent_email = send_email("New job postings from tracked companies", body)
-    sent_slack = send_slack(body)
-
-    if not sent_email and not sent_slack:
-        # No notifier configured — at least surface it in the Action log
-        print(body)
+    print(body)
 
 
 # ---------- Main ----------
