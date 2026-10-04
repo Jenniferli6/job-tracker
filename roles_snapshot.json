@@ -1,8 +1,8 @@
 {
-  "scanned_at": "2026-10-04T10:23:06+00:00",
+  "scanned_at": "2026-10-04T19:26:25+00:00",
   "boards_scanned": 288,
   "boards_failed": 171,
-  "open_roles": 1438,
+  "open_roles": 1439,
   "roles": [
     {
       "company": "1Password",
@@ -696,6 +696,16 @@
     },
     {
       "company": "Alloy",
+      "title": "Senior Analytics Engineer",
+      "location": "New York City",
+      "url": "https://www.alloy.com/about/jobs/detail?gh_jid=8612698002&gh_jid=8612698002",
+      "platform": "greenhouse",
+      "matched_role": "Analytics Engineer",
+      "job_id": "8612698002",
+      "posted_date": "2026-07-07"
+    },
+    {
+      "company": "Alloy",
       "title": "Senior Machine Learning Engineer",
       "location": "New York City",
       "url": "https://www.alloy.com/about/jobs/detail?gh_jid=8495229002&gh_jid=8495229002",
@@ -737,16 +747,6 @@
     {
       "company": "Anthropic",
       "title": "Applied AI Engineer",
-      "location": "Tokyo, Japan",
-      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390799008",
-      "platform": "greenhouse",
-      "matched_role": "AI Engineer",
-      "job_id": "5390799008",
-      "posted_date": "2026-08-19"
-    },
-    {
-      "company": "Anthropic",
-      "title": "Applied AI Engineer",
       "location": "Sydney, Australia",
       "url": "https://job-boards.greenhouse.io/anthropic/jobs/5248983008",
       "platform": "greenhouse",
@@ -756,13 +756,13 @@
     },
     {
       "company": "Anthropic",
-      "title": "Applied AI Engineer, Beneficial Deployments (Life Sciences)",
-      "location": "San Francisco, CA | New York City, NY",
-      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5437172008",
+      "title": "Applied AI Engineer",
+      "location": "Tokyo, Japan",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390799008",
       "platform": "greenhouse",
       "matched_role": "AI Engineer",
-      "job_id": "5437172008",
-      "posted_date": "2026-09-28"
+      "job_id": "5390799008",
+      "posted_date": "2026-08-19"
     },
     {
       "company": "Anthropic",
@@ -773,6 +773,16 @@
       "matched_role": "AI Engineer",
       "job_id": "5413642008",
       "posted_date": "2026-09-09"
+    },
+    {
+      "company": "Anthropic",
+      "title": "Applied AI Engineer, Beneficial Deployments (Life Sciences)",
+      "location": "San Francisco, CA | New York City, NY",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5437172008",
+      "platform": "greenhouse",
+      "matched_role": "AI Engineer",
+      "job_id": "5437172008",
+      "posted_date": "2026-09-28"
     },
     {
       "company": "Anthropic",
@@ -787,22 +797,22 @@
     {
       "company": "Anthropic",
       "title": "Applied AI Engineer, Enterprise",
-      "location": "London, UK",
-      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5354765008",
-      "platform": "greenhouse",
-      "matched_role": "AI Engineer",
-      "job_id": "5354765008",
-      "posted_date": "2026-09-28"
-    },
-    {
-      "company": "Anthropic",
-      "title": "Applied AI Engineer, Enterprise",
       "location": "Munich, Germany",
       "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390795008",
       "platform": "greenhouse",
       "matched_role": "AI Engineer",
       "job_id": "5390795008",
       "posted_date": "2026-08-19"
+    },
+    {
+      "company": "Anthropic",
+      "title": "Applied AI Engineer, Enterprise",
+      "location": "London, UK",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5354765008",
+      "platform": "greenhouse",
+      "matched_role": "AI Engineer",
+      "job_id": "5354765008",
+      "posted_date": "2026-09-28"
     },
     {
       "company": "Anthropic",
@@ -937,22 +947,22 @@
     {
       "company": "Anthropic",
       "title": "Manager, Forward Deployed Engineering",
-      "location": "London, UK",
-      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5385634008",
-      "platform": "greenhouse",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "5385634008",
-      "posted_date": "2026-08-13"
-    },
-    {
-      "company": "Anthropic",
-      "title": "Manager, Forward Deployed Engineering",
       "location": "New York City, NY",
       "url": "https://job-boards.greenhouse.io/anthropic/jobs/5099753008",
       "platform": "greenhouse",
       "matched_role": "Forward Deployed Engineer",
       "job_id": "5099753008",
       "posted_date": "2026-02-05"
+    },
+    {
+      "company": "Anthropic",
+      "title": "Manager, Forward Deployed Engineering",
+      "location": "London, UK",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5385634008",
+      "platform": "greenhouse",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "5385634008",
+      "posted_date": "2026-08-13"
     },
     {
       "company": "Anthropic",
@@ -1037,22 +1047,22 @@
     {
       "company": "Anthropic",
       "title": "Research Engineer, Cybersecurity RL (Reinforcement Learning)",
-      "location": "San Francisco, CA | New York City, NY",
-      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5025624008",
-      "platform": "greenhouse",
-      "matched_role": "Research Engineer",
-      "job_id": "5025624008",
-      "posted_date": "2025-12-09"
-    },
-    {
-      "company": "Anthropic",
-      "title": "Research Engineer, Cybersecurity RL (Reinforcement Learning)",
       "location": "Z\u00fcrich, CH",
       "url": "https://job-boards.greenhouse.io/anthropic/jobs/5412334008",
       "platform": "greenhouse",
       "matched_role": "Research Engineer",
       "job_id": "5412334008",
       "posted_date": "2026-09-07"
+    },
+    {
+      "company": "Anthropic",
+      "title": "Research Engineer, Cybersecurity RL (Reinforcement Learning)",
+      "location": "San Francisco, CA | New York City, NY",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5025624008",
+      "platform": "greenhouse",
+      "matched_role": "Research Engineer",
+      "job_id": "5025624008",
+      "posted_date": "2025-12-09"
     },
     {
       "company": "Anthropic",
@@ -5457,21 +5467,21 @@
     {
       "company": "Elastic",
       "title": "Principal AI Engineer - Context - Agents and Context",
-      "location": "Ireland",
-      "url": "https://jobs.elastic.co/jobs?gh_jid=8223682&gh_jid=8223682",
-      "platform": "greenhouse",
-      "matched_role": "AI Engineer",
-      "job_id": "8223682",
-      "posted_date": "2026-09-22"
-    },
-    {
-      "company": "Elastic",
-      "title": "Principal AI Engineer - Context - Agents and Context",
       "location": "Canada",
       "url": "https://jobs.elastic.co/jobs?gh_jid=8223688&gh_jid=8223688",
       "platform": "greenhouse",
       "matched_role": "AI Engineer",
       "job_id": "8223688",
+      "posted_date": "2026-09-22"
+    },
+    {
+      "company": "Elastic",
+      "title": "Principal AI Engineer - Context - Agents and Context",
+      "location": "Ireland",
+      "url": "https://jobs.elastic.co/jobs?gh_jid=8223682&gh_jid=8223682",
+      "platform": "greenhouse",
+      "matched_role": "AI Engineer",
+      "job_id": "8223682",
       "posted_date": "2026-09-22"
     },
     {
@@ -5497,21 +5507,21 @@
     {
       "company": "Elastic",
       "title": "Senior Security Research Engineer",
-      "location": "Canada",
-      "url": "https://jobs.elastic.co/jobs?gh_jid=8161836&gh_jid=8161836",
-      "platform": "greenhouse",
-      "matched_role": "Research Engineer",
-      "job_id": "8161836",
-      "posted_date": "2026-08-27"
-    },
-    {
-      "company": "Elastic",
-      "title": "Senior Security Research Engineer",
       "location": "Spain",
       "url": "https://jobs.elastic.co/jobs?gh_jid=8161837&gh_jid=8161837",
       "platform": "greenhouse",
       "matched_role": "Research Engineer",
       "job_id": "8161837",
+      "posted_date": "2026-08-27"
+    },
+    {
+      "company": "Elastic",
+      "title": "Senior Security Research Engineer",
+      "location": "Canada",
+      "url": "https://jobs.elastic.co/jobs?gh_jid=8161836&gh_jid=8161836",
+      "platform": "greenhouse",
+      "matched_role": "Research Engineer",
+      "job_id": "8161836",
       "posted_date": "2026-08-27"
     },
     {
@@ -5523,6 +5533,16 @@
       "matched_role": "Research Engineer",
       "job_id": "8119442",
       "posted_date": "2026-08-10"
+    },
+    {
+      "company": "Elastic",
+      "title": "Senior Security Research Engineer, SONAR (Security Operations and Novel Adversary Research)",
+      "location": "Canada",
+      "url": "https://jobs.elastic.co/jobs?gh_jid=8130114&gh_jid=8130114",
+      "platform": "greenhouse",
+      "matched_role": "Research Engineer",
+      "job_id": "8130114",
+      "posted_date": "2026-08-26"
     },
     {
       "company": "Elastic",
@@ -5545,16 +5565,6 @@
       "posted_date": "2026-09-10"
     },
     {
-      "company": "Elastic",
-      "title": "Senior Security Research Engineer, SONAR (Security Operations and Novel Adversary Research)",
-      "location": "Canada",
-      "url": "https://jobs.elastic.co/jobs?gh_jid=8130114&gh_jid=8130114",
-      "platform": "greenhouse",
-      "matched_role": "Research Engineer",
-      "job_id": "8130114",
-      "posted_date": "2026-08-26"
-    },
-    {
       "company": "ElevenLabs",
       "title": "Data Scientist - AI Safety",
       "location": "London",
@@ -5566,13 +5576,13 @@
     },
     {
       "company": "ElevenLabs",
-      "title": "Forward Deployed Engineer - Software Engineer - Brazil",
-      "location": "Brazil",
-      "url": "https://jobs.ashbyhq.com/elevenlabs/6ce3306e-a546-4e11-83d6-3eaff5dd366b",
+      "title": "Forward Deployed Engineer - Software Engineer - Argentina",
+      "location": "Argentina",
+      "url": "https://jobs.ashbyhq.com/elevenlabs/1f7a2786-46d3-46c9-81f3-c3849b412988",
       "platform": "ashby",
       "matched_role": "Forward Deployed Engineer",
-      "job_id": "6ce3306e-a546-4e11-83d6-3eaff5dd366b",
-      "posted_date": "2026-07-20"
+      "job_id": "1f7a2786-46d3-46c9-81f3-c3849b412988",
+      "posted_date": "2026-10-04"
     },
     {
       "company": "ElevenLabs",
@@ -5586,16 +5596,6 @@
     },
     {
       "company": "ElevenLabs",
-      "title": "Forward Deployed Engineer - Software Engineer - Italy",
-      "location": "Italy",
-      "url": "https://jobs.ashbyhq.com/elevenlabs/cd610558-4a8e-4746-81c1-10e3902f5576",
-      "platform": "ashby",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "cd610558-4a8e-4746-81c1-10e3902f5576",
-      "posted_date": "2026-10-04"
-    },
-    {
-      "company": "ElevenLabs",
       "title": "Forward Deployed Engineer - Software Engineer - LATAM",
       "location": "Mexico",
       "url": "https://jobs.ashbyhq.com/elevenlabs/39d438fa-8070-4660-968b-055493860c4c",
@@ -5603,6 +5603,16 @@
       "matched_role": "Forward Deployed Engineer",
       "job_id": "39d438fa-8070-4660-968b-055493860c4c",
       "posted_date": "2026-07-20"
+    },
+    {
+      "company": "ElevenLabs",
+      "title": "Forward Deployed Engineer - Software Engineer - Mexico",
+      "location": "Mexico",
+      "url": "https://jobs.ashbyhq.com/elevenlabs/8a573932-b1fb-4df7-9023-e13a6cecbbbb",
+      "platform": "ashby",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "8a573932-b1fb-4df7-9023-e13a6cecbbbb",
+      "posted_date": "2026-10-04"
     },
     {
       "company": "ElevenLabs",
@@ -5626,13 +5636,13 @@
     },
     {
       "company": "ElevenLabs",
-      "title": "Forward Deployed Engineer - Software Engineer - Sweden",
-      "location": "Sweden",
-      "url": "https://jobs.ashbyhq.com/elevenlabs/c6fc071f-c80e-4d3b-921a-3ec02a2ad25d",
+      "title": "Forward Deployed Engineer - Software Engineer - United Kingdom",
+      "location": "London",
+      "url": "https://jobs.ashbyhq.com/elevenlabs/2d0016e0-3cc2-4ec7-b164-bc2b83990fb6",
       "platform": "ashby",
       "matched_role": "Forward Deployed Engineer",
-      "job_id": "c6fc071f-c80e-4d3b-921a-3ec02a2ad25d",
-      "posted_date": "2026-08-10"
+      "job_id": "2d0016e0-3cc2-4ec7-b164-bc2b83990fb6",
+      "posted_date": "2026-10-04"
     },
     {
       "company": "ElevenLabs",
@@ -12807,21 +12817,21 @@
     {
       "company": "Toast",
       "title": "Staff Data Scientist",
-      "location": "Remote, USA",
-      "url": "https://careers.toasttab.com/jobs?gh_jid=8029049",
-      "platform": "greenhouse",
-      "matched_role": "Data Scientist",
-      "job_id": "8029049",
-      "posted_date": "2026-07-08"
-    },
-    {
-      "company": "Toast",
-      "title": "Staff Data Scientist",
       "location": "Canada",
       "url": "https://careers.toasttab.com/jobs?gh_jid=8052293",
       "platform": "greenhouse",
       "matched_role": "Data Scientist",
       "job_id": "8052293",
+      "posted_date": "2026-07-08"
+    },
+    {
+      "company": "Toast",
+      "title": "Staff Data Scientist",
+      "location": "Remote, USA",
+      "url": "https://careers.toasttab.com/jobs?gh_jid=8029049",
+      "platform": "greenhouse",
+      "matched_role": "Data Scientist",
+      "job_id": "8029049",
       "posted_date": "2026-07-08"
     },
     {
