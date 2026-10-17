@@ -1,8 +1,8 @@
 {
-  "scanned_at": "2026-10-17T08:13:50+00:00",
+  "scanned_at": "2026-10-17T18:21:43+00:00",
   "boards_scanned": 287,
   "boards_failed": 172,
-  "open_roles": 1417,
+  "open_roles": 1415,
   "roles": [
     {
       "company": "1Password",
@@ -183,16 +183,6 @@
       "matched_role": "Member of Technical Staff",
       "job_id": "8050072",
       "posted_date": "2026-08-11"
-    },
-    {
-      "company": "Adyen",
-      "title": "Optimization Data Analyst",
-      "location": "London",
-      "url": "https://job-boards.greenhouse.io/adyen/jobs/8200896",
-      "platform": "greenhouse",
-      "matched_role": "Data Analyst",
-      "job_id": "8200896",
-      "posted_date": "2026-09-16"
     },
     {
       "company": "Adyen",
@@ -746,23 +736,13 @@
     },
     {
       "company": "Anthropic",
-      "title": "Applied AI Engineer, DNB",
-      "location": "London, UK",
-      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5435282008",
-      "platform": "greenhouse",
-      "matched_role": "AI Engineer",
-      "job_id": "5435282008",
-      "posted_date": "2026-09-28"
-    },
-    {
-      "company": "Anthropic",
       "title": "Applied AI Engineer, Enterprise",
-      "location": "Munich, Germany",
-      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390795008",
+      "location": "Paris, France",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390754008",
       "platform": "greenhouse",
       "matched_role": "AI Engineer",
-      "job_id": "5390795008",
-      "posted_date": "2026-08-19"
+      "job_id": "5390754008",
+      "posted_date": "2026-08-20"
     },
     {
       "company": "Anthropic",
@@ -777,12 +757,12 @@
     {
       "company": "Anthropic",
       "title": "Applied AI Engineer, Enterprise",
-      "location": "Paris, France",
-      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390754008",
+      "location": "Munich, Germany",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5390795008",
       "platform": "greenhouse",
       "matched_role": "AI Engineer",
-      "job_id": "5390754008",
-      "posted_date": "2026-08-20"
+      "job_id": "5390795008",
+      "posted_date": "2026-08-19"
     },
     {
       "company": "Anthropic",
@@ -897,22 +877,22 @@
     {
       "company": "Anthropic",
       "title": "Forward Deployed Engineer",
-      "location": "London, UK",
-      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5423029008",
-      "platform": "greenhouse",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "5423029008",
-      "posted_date": "2026-09-14"
-    },
-    {
-      "company": "Anthropic",
-      "title": "Forward Deployed Engineer",
       "location": "Munich, Germany",
       "url": "https://job-boards.greenhouse.io/anthropic/jobs/5391016008",
       "platform": "greenhouse",
       "matched_role": "Forward Deployed Engineer",
       "job_id": "5391016008",
       "posted_date": "2026-08-17"
+    },
+    {
+      "company": "Anthropic",
+      "title": "Forward Deployed Engineer",
+      "location": "London, UK",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5423029008",
+      "platform": "greenhouse",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "5423029008",
+      "posted_date": "2026-09-14"
     },
     {
       "company": "Anthropic",
@@ -947,22 +927,22 @@
     {
       "company": "Anthropic",
       "title": "Manager, Forward Deployed Engineering",
-      "location": "New York City, NY",
-      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5099753008",
-      "platform": "greenhouse",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "5099753008",
-      "posted_date": "2026-02-05"
-    },
-    {
-      "company": "Anthropic",
-      "title": "Manager, Forward Deployed Engineering",
       "location": "London, UK",
       "url": "https://job-boards.greenhouse.io/anthropic/jobs/5385634008",
       "platform": "greenhouse",
       "matched_role": "Forward Deployed Engineer",
       "job_id": "5385634008",
       "posted_date": "2026-08-13"
+    },
+    {
+      "company": "Anthropic",
+      "title": "Manager, Forward Deployed Engineering",
+      "location": "New York City, NY",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5099753008",
+      "platform": "greenhouse",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "5099753008",
+      "posted_date": "2026-02-05"
     },
     {
       "company": "Anthropic",
@@ -1037,22 +1017,22 @@
     {
       "company": "Anthropic",
       "title": "Research Engineer, Cybersecurity RL (Reinforcement Learning)",
-      "location": "Z\u00fcrich, CH",
-      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5412334008",
-      "platform": "greenhouse",
-      "matched_role": "Research Engineer",
-      "job_id": "5412334008",
-      "posted_date": "2026-09-07"
-    },
-    {
-      "company": "Anthropic",
-      "title": "Research Engineer, Cybersecurity RL (Reinforcement Learning)",
       "location": "San Francisco, CA | New York City, NY",
       "url": "https://job-boards.greenhouse.io/anthropic/jobs/5025624008",
       "platform": "greenhouse",
       "matched_role": "Research Engineer",
       "job_id": "5025624008",
       "posted_date": "2025-12-09"
+    },
+    {
+      "company": "Anthropic",
+      "title": "Research Engineer, Cybersecurity RL (Reinforcement Learning)",
+      "location": "Z\u00fcrich, CH",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5412334008",
+      "platform": "greenhouse",
+      "matched_role": "Research Engineer",
+      "job_id": "5412334008",
+      "posted_date": "2026-09-07"
     },
     {
       "company": "Anthropic",
@@ -1117,21 +1097,21 @@
     {
       "company": "Anthropic",
       "title": "Research Engineer, Machine Learning (RL Velocity)",
-      "location": "Remote-Friendly (Travel-Required) | San Francisco, CA | New York City, NY",
-      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5198108008",
-      "platform": "greenhouse",
-      "matched_role": "Research Engineer",
-      "job_id": "5198108008",
-      "posted_date": "2026-04-23"
-    },
-    {
-      "company": "Anthropic",
-      "title": "Research Engineer, Machine Learning (RL Velocity)",
       "location": "London, UK",
       "url": "https://job-boards.greenhouse.io/anthropic/jobs/5198074008",
       "platform": "greenhouse",
       "matched_role": "Research Engineer",
       "job_id": "5198074008",
+      "posted_date": "2026-04-23"
+    },
+    {
+      "company": "Anthropic",
+      "title": "Research Engineer, Machine Learning (RL Velocity)",
+      "location": "Remote-Friendly (Travel-Required) | San Francisco, CA | New York City, NY",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5198108008",
+      "platform": "greenhouse",
+      "matched_role": "Research Engineer",
+      "job_id": "5198108008",
       "posted_date": "2026-04-23"
     },
     {
@@ -6237,21 +6217,21 @@
     {
       "company": "Graphcore",
       "title": "AI Research Engineer",
-      "location": "Cambridge, UK",
-      "url": "https://job-boards.greenhouse.io/graphcore/jobs/8632583002",
-      "platform": "greenhouse",
-      "matched_role": "Research Engineer",
-      "job_id": "8632583002",
-      "posted_date": "2026-07-14"
-    },
-    {
-      "company": "Graphcore",
-      "title": "AI Research Engineer",
       "location": "London, UK",
       "url": "https://job-boards.greenhouse.io/graphcore/jobs/8632581002",
       "platform": "greenhouse",
       "matched_role": "Research Engineer",
       "job_id": "8632581002",
+      "posted_date": "2026-07-14"
+    },
+    {
+      "company": "Graphcore",
+      "title": "AI Research Engineer",
+      "location": "Cambridge, UK",
+      "url": "https://job-boards.greenhouse.io/graphcore/jobs/8632583002",
+      "platform": "greenhouse",
+      "matched_role": "Research Engineer",
+      "job_id": "8632583002",
       "posted_date": "2026-07-14"
     },
     {
@@ -6263,6 +6243,16 @@
       "matched_role": "Research Engineer",
       "job_id": "8632582002",
       "posted_date": "2026-07-14"
+    },
+    {
+      "company": "Graphcore",
+      "title": "Senior Machine Learning Engineer (Large Systems)",
+      "location": "Cambridge, UK",
+      "url": "https://job-boards.greenhouse.io/graphcore/jobs/8881595002",
+      "platform": "greenhouse",
+      "matched_role": "Machine Learning Engineer",
+      "job_id": "8881595002",
+      "posted_date": "2026-10-09"
     },
     {
       "company": "Graphcore",
@@ -6292,16 +6282,6 @@
       "platform": "greenhouse",
       "matched_role": "Machine Learning Engineer",
       "job_id": "8881592002",
-      "posted_date": "2026-10-09"
-    },
-    {
-      "company": "Graphcore",
-      "title": "Senior Machine Learning Engineer (Large Systems)",
-      "location": "Cambridge, UK",
-      "url": "https://job-boards.greenhouse.io/graphcore/jobs/8881595002",
-      "platform": "greenhouse",
-      "matched_role": "Machine Learning Engineer",
-      "job_id": "8881595002",
       "posted_date": "2026-10-09"
     },
     {
@@ -11277,46 +11257,6 @@
     {
       "company": "Samsara",
       "title": "Senior AI Data & Analytics Engineer II",
-      "location": "Remote - CA",
-      "url": "https://www.samsara.com/company/careers/roles/8281483?gh_jid=8281483",
-      "platform": "greenhouse",
-      "matched_role": "Analytics Engineer",
-      "job_id": "8281483",
-      "posted_date": "2026-10-14"
-    },
-    {
-      "company": "Samsara",
-      "title": "Senior AI Data & Analytics Engineer II",
-      "location": "Remote - Austin",
-      "url": "https://www.samsara.com/company/careers/roles/8281489?gh_jid=8281489",
-      "platform": "greenhouse",
-      "matched_role": "Analytics Engineer",
-      "job_id": "8281489",
-      "posted_date": "2026-10-14"
-    },
-    {
-      "company": "Samsara",
-      "title": "Senior AI Data & Analytics Engineer II",
-      "location": "Remote - MA",
-      "url": "https://www.samsara.com/company/careers/roles/8281491?gh_jid=8281491",
-      "platform": "greenhouse",
-      "matched_role": "Analytics Engineer",
-      "job_id": "8281491",
-      "posted_date": "2026-10-14"
-    },
-    {
-      "company": "Samsara",
-      "title": "Senior AI Data & Analytics Engineer II",
-      "location": "Remote - Chicago",
-      "url": "https://www.samsara.com/company/careers/roles/8281490?gh_jid=8281490",
-      "platform": "greenhouse",
-      "matched_role": "Analytics Engineer",
-      "job_id": "8281490",
-      "posted_date": "2026-10-14"
-    },
-    {
-      "company": "Samsara",
-      "title": "Senior AI Data & Analytics Engineer II",
       "location": "Remote - SF Bay Area",
       "url": "https://www.samsara.com/company/careers/roles/7917475?gh_jid=7917475",
       "platform": "greenhouse",
@@ -11342,6 +11282,46 @@
       "platform": "greenhouse",
       "matched_role": "Analytics Engineer",
       "job_id": "8281482",
+      "posted_date": "2026-10-14"
+    },
+    {
+      "company": "Samsara",
+      "title": "Senior AI Data & Analytics Engineer II",
+      "location": "Remote - CA",
+      "url": "https://www.samsara.com/company/careers/roles/8281483?gh_jid=8281483",
+      "platform": "greenhouse",
+      "matched_role": "Analytics Engineer",
+      "job_id": "8281483",
+      "posted_date": "2026-10-14"
+    },
+    {
+      "company": "Samsara",
+      "title": "Senior AI Data & Analytics Engineer II",
+      "location": "Remote - Austin",
+      "url": "https://www.samsara.com/company/careers/roles/8281489?gh_jid=8281489",
+      "platform": "greenhouse",
+      "matched_role": "Analytics Engineer",
+      "job_id": "8281489",
+      "posted_date": "2026-10-14"
+    },
+    {
+      "company": "Samsara",
+      "title": "Senior AI Data & Analytics Engineer II",
+      "location": "Remote - Chicago",
+      "url": "https://www.samsara.com/company/careers/roles/8281490?gh_jid=8281490",
+      "platform": "greenhouse",
+      "matched_role": "Analytics Engineer",
+      "job_id": "8281490",
+      "posted_date": "2026-10-14"
+    },
+    {
+      "company": "Samsara",
+      "title": "Senior AI Data & Analytics Engineer II",
+      "location": "Remote - MA",
+      "url": "https://www.samsara.com/company/careers/roles/8281491?gh_jid=8281491",
+      "platform": "greenhouse",
+      "matched_role": "Analytics Engineer",
+      "job_id": "8281491",
       "posted_date": "2026-10-14"
     },
     {
@@ -11977,21 +11957,21 @@
     {
       "company": "SpaceX",
       "title": "AI Engineer, Special Programs - Top Secret Clearance",
-      "location": "Palo Alto, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8557073002?gh_jid=8557073002",
-      "platform": "greenhouse",
-      "matched_role": "AI Engineer",
-      "job_id": "8557073002",
-      "posted_date": "2026-05-21"
-    },
-    {
-      "company": "SpaceX",
-      "title": "AI Engineer, Special Programs - Top Secret Clearance",
       "location": "Washington, DC",
       "url": "https://boards.greenhouse.io/spacex/jobs/8557219002?gh_jid=8557219002",
       "platform": "greenhouse",
       "matched_role": "AI Engineer",
       "job_id": "8557219002",
+      "posted_date": "2026-05-21"
+    },
+    {
+      "company": "SpaceX",
+      "title": "AI Engineer, Special Programs - Top Secret Clearance",
+      "location": "Palo Alto, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8557073002?gh_jid=8557073002",
+      "platform": "greenhouse",
+      "matched_role": "AI Engineer",
+      "job_id": "8557073002",
       "posted_date": "2026-05-21"
     },
     {
@@ -12017,22 +11997,22 @@
     {
       "company": "SpaceX",
       "title": "AI Engineer, Supercomputing, Special Programs - Top Secret Clearance",
-      "location": "Palo Alto, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8557110002?gh_jid=8557110002",
-      "platform": "greenhouse",
-      "matched_role": "AI Engineer",
-      "job_id": "8557110002",
-      "posted_date": "2026-05-21"
-    },
-    {
-      "company": "SpaceX",
-      "title": "AI Engineer, Supercomputing, Special Programs - Top Secret Clearance",
       "location": "Redmond, WA",
       "url": "https://boards.greenhouse.io/spacex/jobs/8865230002?gh_jid=8865230002",
       "platform": "greenhouse",
       "matched_role": "AI Engineer",
       "job_id": "8865230002",
       "posted_date": "2026-10-02"
+    },
+    {
+      "company": "SpaceX",
+      "title": "AI Engineer, Supercomputing, Special Programs - Top Secret Clearance",
+      "location": "Palo Alto, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8557110002?gh_jid=8557110002",
+      "platform": "greenhouse",
+      "matched_role": "AI Engineer",
+      "job_id": "8557110002",
+      "posted_date": "2026-05-21"
     },
     {
       "company": "SpaceX",
@@ -12057,22 +12037,22 @@
     {
       "company": "SpaceX",
       "title": "Principal AI Engineer, Special Programs",
-      "location": "Palo Alto, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8572113002?gh_jid=8572113002",
-      "platform": "greenhouse",
-      "matched_role": "AI Engineer",
-      "job_id": "8572113002",
-      "posted_date": "2026-05-29"
-    },
-    {
-      "company": "SpaceX",
-      "title": "Principal AI Engineer, Special Programs",
       "location": "Washington, DC",
       "url": "https://boards.greenhouse.io/spacex/jobs/8572114002?gh_jid=8572114002",
       "platform": "greenhouse",
       "matched_role": "AI Engineer",
       "job_id": "8572114002",
       "posted_date": "2026-07-06"
+    },
+    {
+      "company": "SpaceX",
+      "title": "Principal AI Engineer, Special Programs",
+      "location": "Palo Alto, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8572113002?gh_jid=8572113002",
+      "platform": "greenhouse",
+      "matched_role": "AI Engineer",
+      "job_id": "8572113002",
+      "posted_date": "2026-05-29"
     },
     {
       "company": "SpaceX",
@@ -12407,22 +12387,22 @@
     {
       "company": "Stripe",
       "title": "Data Scientist",
-      "location": "Seattle, WA",
-      "url": "https://stripe.com/jobs/search?gh_jid=8222149",
-      "platform": "greenhouse",
-      "matched_role": "Data Scientist",
-      "job_id": "8222149",
-      "posted_date": "2026-09-21"
-    },
-    {
-      "company": "Stripe",
-      "title": "Data Scientist",
       "location": "Toronto",
       "url": "https://stripe.com/jobs/search?gh_jid=5895430",
       "platform": "greenhouse",
       "matched_role": "Data Scientist",
       "job_id": "5895430",
       "posted_date": "2024-04-30"
+    },
+    {
+      "company": "Stripe",
+      "title": "Data Scientist",
+      "location": "Seattle, WA",
+      "url": "https://stripe.com/jobs/search?gh_jid=8222149",
+      "platform": "greenhouse",
+      "matched_role": "Data Scientist",
+      "job_id": "8222149",
+      "posted_date": "2026-09-21"
     },
     {
       "company": "Stripe",
