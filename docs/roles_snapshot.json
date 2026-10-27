@@ -1,8 +1,8 @@
 {
-  "scanned_at": "2026-10-26T21:00:00+00:00",
+  "scanned_at": "2026-10-27T09:33:11+00:00",
   "boards_scanned": 288,
   "boards_failed": 171,
-  "open_roles": 1387,
+  "open_roles": 1385,
   "roles": [
     {
       "company": "1Password",
@@ -43,6 +43,16 @@
       "matched_role": "Machine Learning Engineer",
       "job_id": "8064973",
       "posted_date": "2026-08-20"
+    },
+    {
+      "company": "Abnormal Security",
+      "title": "Machine Learning Engineer 1",
+      "location": "Remote - Singapore",
+      "url": "https://abnormal.ai/careers/jobs/8002099003?gh_jid=8002099003",
+      "platform": "greenhouse",
+      "matched_role": "Machine Learning Engineer",
+      "job_id": "8002099003",
+      "posted_date": "2026-10-27"
     },
     {
       "company": "Abnormal Security",
@@ -247,21 +257,21 @@
     {
       "company": "Affirm",
       "title": "Machine Learning Engineer II (Underwriting ML)",
-      "location": "Remote Canada",
-      "url": "https://job-boards.greenhouse.io/affirm/jobs/7822389003",
-      "platform": "greenhouse",
-      "matched_role": "Machine Learning Engineer",
-      "job_id": "7822389003",
-      "posted_date": "2026-08-06"
-    },
-    {
-      "company": "Affirm",
-      "title": "Machine Learning Engineer II (Underwriting ML)",
       "location": "Remote US",
       "url": "https://job-boards.greenhouse.io/affirm/jobs/7822387003",
       "platform": "greenhouse",
       "matched_role": "Machine Learning Engineer",
       "job_id": "7822387003",
+      "posted_date": "2026-08-06"
+    },
+    {
+      "company": "Affirm",
+      "title": "Machine Learning Engineer II (Underwriting ML)",
+      "location": "Remote Canada",
+      "url": "https://job-boards.greenhouse.io/affirm/jobs/7822389003",
+      "platform": "greenhouse",
+      "matched_role": "Machine Learning Engineer",
+      "job_id": "7822389003",
       "posted_date": "2026-08-06"
     },
     {
@@ -293,6 +303,16 @@
       "matched_role": "Machine Learning Engineer",
       "job_id": "7716341",
       "posted_date": "2026-03-22"
+    },
+    {
+      "company": "Airbnb",
+      "title": "Machine Learning Engineer, Assistance Engineering",
+      "location": "Remote-USA",
+      "url": "https://careers.airbnb.com/positions/7826337?gh_jid=7826337",
+      "platform": "greenhouse",
+      "matched_role": "Machine Learning Engineer",
+      "job_id": "7826337",
+      "posted_date": "2026-04-20"
     },
     {
       "company": "Airbnb",
@@ -846,16 +866,6 @@
     },
     {
       "company": "Anthropic",
-      "title": "Lead Data Scientist, Platform Product",
-      "location": "New York City, NY | Seattle, WA; San Francisco, CA",
-      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5116820008",
-      "platform": "greenhouse",
-      "matched_role": "Data Scientist",
-      "job_id": "5116820008",
-      "posted_date": "2026-05-25"
-    },
-    {
-      "company": "Anthropic",
       "title": "Manager, Applied AI Engineering (Megas) ",
       "location": "San Francisco, CA",
       "url": "https://job-boards.greenhouse.io/anthropic/jobs/5442934008",
@@ -957,22 +967,22 @@
     {
       "company": "Anthropic",
       "title": "Research Engineer, Cybersecurity RL (Reinforcement Learning)",
-      "location": "Z\u00fcrich, CH",
-      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5412334008",
-      "platform": "greenhouse",
-      "matched_role": "Research Engineer",
-      "job_id": "5412334008",
-      "posted_date": "2026-09-07"
-    },
-    {
-      "company": "Anthropic",
-      "title": "Research Engineer, Cybersecurity RL (Reinforcement Learning)",
       "location": "San Francisco, CA | New York City, NY",
       "url": "https://job-boards.greenhouse.io/anthropic/jobs/5025624008",
       "platform": "greenhouse",
       "matched_role": "Research Engineer",
       "job_id": "5025624008",
       "posted_date": "2025-12-09"
+    },
+    {
+      "company": "Anthropic",
+      "title": "Research Engineer, Cybersecurity RL (Reinforcement Learning)",
+      "location": "Z\u00fcrich, CH",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5412334008",
+      "platform": "greenhouse",
+      "matched_role": "Research Engineer",
+      "job_id": "5412334008",
+      "posted_date": "2026-09-07"
     },
     {
       "company": "Anthropic",
@@ -1037,21 +1047,21 @@
     {
       "company": "Anthropic",
       "title": "Research Engineer, Machine Learning (RL Velocity)",
-      "location": "London, UK",
-      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5198074008",
-      "platform": "greenhouse",
-      "matched_role": "Research Engineer",
-      "job_id": "5198074008",
-      "posted_date": "2026-04-23"
-    },
-    {
-      "company": "Anthropic",
-      "title": "Research Engineer, Machine Learning (RL Velocity)",
       "location": "Remote-Friendly (Travel-Required) | San Francisco, CA | New York City, NY",
       "url": "https://job-boards.greenhouse.io/anthropic/jobs/5198108008",
       "platform": "greenhouse",
       "matched_role": "Research Engineer",
       "job_id": "5198108008",
+      "posted_date": "2026-04-23"
+    },
+    {
+      "company": "Anthropic",
+      "title": "Research Engineer, Machine Learning (RL Velocity)",
+      "location": "London, UK",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5198074008",
+      "platform": "greenhouse",
+      "matched_role": "Research Engineer",
+      "job_id": "5198074008",
       "posted_date": "2026-04-23"
     },
     {
@@ -1097,22 +1107,22 @@
     {
       "company": "Anthropic",
       "title": "Research Engineer, Production Model Post-Training",
-      "location": "San Francisco, CA | New York City, NY | Seattle, WA",
-      "url": "https://job-boards.greenhouse.io/anthropic/jobs/4613592008",
-      "platform": "greenhouse",
-      "matched_role": "Research Engineer",
-      "job_id": "4613592008",
-      "posted_date": "2025-04-01"
-    },
-    {
-      "company": "Anthropic",
-      "title": "Research Engineer, Production Model Post-Training",
       "location": "Z\u00fcrich, CH",
       "url": "https://job-boards.greenhouse.io/anthropic/jobs/5112018008",
       "platform": "greenhouse",
       "matched_role": "Research Engineer",
       "job_id": "5112018008",
       "posted_date": "2026-02-12"
+    },
+    {
+      "company": "Anthropic",
+      "title": "Research Engineer, Production Model Post-Training",
+      "location": "San Francisco, CA | New York City, NY | Seattle, WA",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/4613592008",
+      "platform": "greenhouse",
+      "matched_role": "Research Engineer",
+      "job_id": "4613592008",
+      "posted_date": "2025-04-01"
     },
     {
       "company": "Anthropic",
@@ -1213,6 +1223,16 @@
       "matched_role": "Research Engineer",
       "job_id": "5404725008",
       "posted_date": "2026-08-27"
+    },
+    {
+      "company": "Anthropic",
+      "title": "Tech Lead Manager, Developer Platform Product Data Scientist",
+      "location": "New York City, NY; San Francisco, CA; Seattle, WA",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5116820008",
+      "platform": "greenhouse",
+      "matched_role": "Data Scientist",
+      "job_id": "5116820008",
+      "posted_date": "2026-05-25"
     },
     {
       "company": "Anysphere / Cursor",
@@ -1697,21 +1717,21 @@
     {
       "company": "Brex",
       "title": "Data Analyst II",
-      "location": "New York, New York, United States",
-      "url": "https://www.brex.com/careers/8463702002?gh_jid=8463702002",
-      "platform": "greenhouse",
-      "matched_role": "Data Analyst",
-      "job_id": "8463702002",
-      "posted_date": "2026-03-14"
-    },
-    {
-      "company": "Brex",
-      "title": "Data Analyst II",
       "location": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil",
       "url": "https://www.brex.com/careers/8463703002?gh_jid=8463703002",
       "platform": "greenhouse",
       "matched_role": "Data Analyst",
       "job_id": "8463703002",
+      "posted_date": "2026-03-14"
+    },
+    {
+      "company": "Brex",
+      "title": "Data Analyst II",
+      "location": "New York, New York, United States",
+      "url": "https://www.brex.com/careers/8463702002?gh_jid=8463702002",
+      "platform": "greenhouse",
+      "matched_role": "Data Analyst",
+      "job_id": "8463702002",
       "posted_date": "2026-03-14"
     },
     {
@@ -1823,16 +1843,6 @@
       "matched_role": "Member of Technical Staff",
       "job_id": "20dab4de-51f4-4704-8b72-5896b83ac37b",
       "posted_date": "2026-05-08"
-    },
-    {
-      "company": "Chainguard",
-      "title": "Senior Analytics Engineer",
-      "location": "United States - Remote",
-      "url": "https://job-boards.greenhouse.io/chainguard/jobs/4711370006",
-      "platform": "greenhouse",
-      "matched_role": "Analytics Engineer",
-      "job_id": "4711370006",
-      "posted_date": "2026-09-11"
     },
     {
       "company": "Character.AI",
@@ -2068,21 +2078,21 @@
       "company": "Cloudflare",
       "title": "Senior Forward Deployed Engineer",
       "location": "Hybrid",
-      "url": "https://boards.greenhouse.io/cloudflare/jobs/8265704?gh_jid=8265704",
-      "platform": "greenhouse",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "8265704",
-      "posted_date": "2026-10-08"
-    },
-    {
-      "company": "Cloudflare",
-      "title": "Senior Forward Deployed Engineer",
-      "location": "Hybrid",
       "url": "https://boards.greenhouse.io/cloudflare/jobs/8160655?gh_jid=8160655",
       "platform": "greenhouse",
       "matched_role": "Forward Deployed Engineer",
       "job_id": "8160655",
       "posted_date": "2026-09-03"
+    },
+    {
+      "company": "Cloudflare",
+      "title": "Senior Forward Deployed Engineer",
+      "location": "Hybrid",
+      "url": "https://boards.greenhouse.io/cloudflare/jobs/8206674?gh_jid=8206674",
+      "platform": "greenhouse",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "8206674",
+      "posted_date": "2026-09-21"
     },
     {
       "company": "Cloudflare",
@@ -2098,11 +2108,11 @@
       "company": "Cloudflare",
       "title": "Senior Forward Deployed Engineer",
       "location": "Hybrid",
-      "url": "https://boards.greenhouse.io/cloudflare/jobs/8206674?gh_jid=8206674",
+      "url": "https://boards.greenhouse.io/cloudflare/jobs/8265704?gh_jid=8265704",
       "platform": "greenhouse",
       "matched_role": "Forward Deployed Engineer",
-      "job_id": "8206674",
-      "posted_date": "2026-09-21"
+      "job_id": "8265704",
+      "posted_date": "2026-10-08"
     },
     {
       "company": "Cloudflare",
@@ -3116,16 +3126,6 @@
     },
     {
       "company": "Coupang",
-      "title": "Senior, Data Analyst (Audit Automation & Data Analytics)",
-      "location": "Seoul, South Korea",
-      "url": "https://www.coupang.jobs/en/jobs/?gh_jid=7474295",
-      "platform": "greenhouse",
-      "matched_role": "Data Analyst",
-      "job_id": "7474295",
-      "posted_date": "2025-12-17"
-    },
-    {
-      "company": "Coupang",
       "title": "Senior~Staff, Data Analyst (Catalog)",
       "location": "Seoul, South Korea",
       "url": "https://www.coupang.jobs/en/jobs/?gh_jid=7919225",
@@ -3167,22 +3167,22 @@
     {
       "company": "Coupang",
       "title": "Staff Data Analyst (Pricing)",
-      "location": "Singapore; Singapore, Singapore",
-      "url": "https://www.coupang.jobs/en/jobs/?gh_jid=8155633",
-      "platform": "greenhouse",
-      "matched_role": "Data Analyst",
-      "job_id": "8155633",
-      "posted_date": "2026-08-25"
-    },
-    {
-      "company": "Coupang",
-      "title": "Staff Data Analyst (Pricing)",
       "location": "Taipei, Taiwan",
       "url": "https://www.coupang.jobs/en/jobs/?gh_jid=8101595",
       "platform": "greenhouse",
       "matched_role": "Data Analyst",
       "job_id": "8101595",
       "posted_date": "2026-08-04"
+    },
+    {
+      "company": "Coupang",
+      "title": "Staff Data Analyst (Pricing)",
+      "location": "Singapore; Singapore, Singapore",
+      "url": "https://www.coupang.jobs/en/jobs/?gh_jid=8155633",
+      "platform": "greenhouse",
+      "matched_role": "Data Analyst",
+      "job_id": "8155633",
+      "posted_date": "2026-08-25"
     },
     {
       "company": "Coupang",
@@ -3293,6 +3293,16 @@
       "matched_role": "Machine Learning Engineer",
       "job_id": "8130043",
       "posted_date": "2026-08-17"
+    },
+    {
+      "company": "Coupang",
+      "title": "Staff, Machine Learning Engineer (Search & Discovery)",
+      "location": "Seoul, South Korea",
+      "url": "https://www.coupang.jobs/en/jobs/?gh_jid=8130045",
+      "platform": "greenhouse",
+      "matched_role": "Machine Learning Engineer",
+      "job_id": "8130045",
+      "posted_date": "2026-10-27"
     },
     {
       "company": "Coupang",
@@ -3537,6 +3547,16 @@
     {
       "company": "Databricks",
       "title": "Forward Deployed Engineer",
+      "location": "Tokyo, Japan",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8741922002",
+      "platform": "greenhouse",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "8741922002",
+      "posted_date": "2026-09-15"
+    },
+    {
+      "company": "Databricks",
+      "title": "Forward Deployed Engineer",
       "location": "Belgrade, Serbia; Berlin, Germany; Munich, Germany",
       "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8648494002",
       "platform": "greenhouse",
@@ -3553,16 +3573,6 @@
       "matched_role": "Forward Deployed Engineer",
       "job_id": "8540455002",
       "posted_date": "2026-05-13"
-    },
-    {
-      "company": "Databricks",
-      "title": "Forward Deployed Engineer",
-      "location": "Tokyo, Japan",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8741922002",
-      "platform": "greenhouse",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "8741922002",
-      "posted_date": "2026-09-15"
     },
     {
       "company": "Databricks",
@@ -3667,6 +3677,16 @@
     {
       "company": "Databricks",
       "title": "Manager, Forward Deployed Engineering",
+      "location": "Remote - India",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8503068002",
+      "platform": "greenhouse",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "8503068002",
+      "posted_date": "2026-04-13"
+    },
+    {
+      "company": "Databricks",
+      "title": "Manager, Forward Deployed Engineering",
       "location": "Sydney, Australia",
       "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8445817002",
       "platform": "greenhouse",
@@ -3686,16 +3706,6 @@
     },
     {
       "company": "Databricks",
-      "title": "Manager, Forward Deployed Engineering",
-      "location": "Remote - India",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8503068002",
-      "platform": "greenhouse",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "8503068002",
-      "posted_date": "2026-04-13"
-    },
-    {
-      "company": "Databricks",
       "title": "Manager, Forward Deployed Engineering - CMEG",
       "location": "Remote - Washington D.C.",
       "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8585019002",
@@ -3703,6 +3713,16 @@
       "matched_role": "Forward Deployed Engineer",
       "job_id": "8585019002",
       "posted_date": "2026-06-23"
+    },
+    {
+      "company": "Databricks",
+      "title": "Manager/Sr. Manager, AI Forward Deployed Engineering",
+      "location": "Bengaluru, India",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8630019002",
+      "platform": "greenhouse",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "8630019002",
+      "posted_date": "2026-09-30"
     },
     {
       "company": "Databricks",
@@ -3877,22 +3897,22 @@
     {
       "company": "Databricks",
       "title": "Sr. Engagement Manager, FDE",
-      "location": "Munich, Germany",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8885045002",
-      "platform": "greenhouse",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "8885045002",
-      "posted_date": "2026-10-15"
-    },
-    {
-      "company": "Databricks",
-      "title": "Sr. Engagement Manager, FDE",
       "location": "Singapore",
       "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8829903002",
       "platform": "greenhouse",
       "matched_role": "Forward Deployed Engineer",
       "job_id": "8829903002",
       "posted_date": "2026-09-23"
+    },
+    {
+      "company": "Databricks",
+      "title": "Sr. Engagement Manager, FDE",
+      "location": "Munich, Germany",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8885045002",
+      "platform": "greenhouse",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "8885045002",
+      "posted_date": "2026-10-15"
     },
     {
       "company": "Databricks",
@@ -3937,82 +3957,12 @@
     {
       "company": "Databricks",
       "title": "Sr. Forward Deployed Engineer",
-      "location": "Singapore",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8731998002",
-      "platform": "greenhouse",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "8731998002",
-      "posted_date": "2026-09-30"
-    },
-    {
-      "company": "Databricks",
-      "title": "Sr. Forward Deployed Engineer",
-      "location": "Remote - Washington D.C.",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8739465002",
-      "platform": "greenhouse",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "8739465002",
-      "posted_date": "2026-08-21"
-    },
-    {
-      "company": "Databricks",
-      "title": "Sr. Forward Deployed Engineer",
-      "location": "Chicago, Illinois",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8739458002",
-      "platform": "greenhouse",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "8739458002",
-      "posted_date": "2026-08-21"
-    },
-    {
-      "company": "Databricks",
-      "title": "Sr. Forward Deployed Engineer",
-      "location": "San Francisco, California",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8739474002",
-      "platform": "greenhouse",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "8739474002",
-      "posted_date": "2026-08-21"
-    },
-    {
-      "company": "Databricks",
-      "title": "Sr. Forward Deployed Engineer",
       "location": "Austin, Texas",
       "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8657065002",
       "platform": "greenhouse",
       "matched_role": "Forward Deployed Engineer",
       "job_id": "8657065002",
       "posted_date": "2026-08-21"
-    },
-    {
-      "company": "Databricks",
-      "title": "Sr. Forward Deployed Engineer",
-      "location": "United States",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8739484002",
-      "platform": "greenhouse",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "8739484002",
-      "posted_date": "2026-08-21"
-    },
-    {
-      "company": "Databricks",
-      "title": "Sr. Forward Deployed Engineer",
-      "location": "New York City, New York",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8739462002",
-      "platform": "greenhouse",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "8739462002",
-      "posted_date": "2026-08-21"
-    },
-    {
-      "company": "Databricks",
-      "title": "Sr. Forward Deployed Engineer",
-      "location": "Western Australia, Australia",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8514430002",
-      "platform": "greenhouse",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "8514430002",
-      "posted_date": "2026-04-21"
     },
     {
       "company": "Databricks",
@@ -4036,12 +3986,102 @@
     },
     {
       "company": "Databricks",
-      "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
-      "location": "Dallas, Texas",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461218002",
+      "title": "Sr. Forward Deployed Engineer",
+      "location": "Singapore",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8731998002",
       "platform": "greenhouse",
       "matched_role": "Forward Deployed Engineer",
-      "job_id": "8461218002",
+      "job_id": "8731998002",
+      "posted_date": "2026-09-30"
+    },
+    {
+      "company": "Databricks",
+      "title": "Sr. Forward Deployed Engineer",
+      "location": "United States",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8739484002",
+      "platform": "greenhouse",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "8739484002",
+      "posted_date": "2026-08-21"
+    },
+    {
+      "company": "Databricks",
+      "title": "Sr. Forward Deployed Engineer",
+      "location": "San Francisco, California",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8739474002",
+      "platform": "greenhouse",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "8739474002",
+      "posted_date": "2026-08-21"
+    },
+    {
+      "company": "Databricks",
+      "title": "Sr. Forward Deployed Engineer",
+      "location": "Western Australia, Australia",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8514430002",
+      "platform": "greenhouse",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "8514430002",
+      "posted_date": "2026-04-21"
+    },
+    {
+      "company": "Databricks",
+      "title": "Sr. Forward Deployed Engineer",
+      "location": "Remote - Washington D.C.",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8739465002",
+      "platform": "greenhouse",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "8739465002",
+      "posted_date": "2026-08-21"
+    },
+    {
+      "company": "Databricks",
+      "title": "Sr. Forward Deployed Engineer",
+      "location": "New York City, New York",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8739462002",
+      "platform": "greenhouse",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "8739462002",
+      "posted_date": "2026-08-21"
+    },
+    {
+      "company": "Databricks",
+      "title": "Sr. Forward Deployed Engineer",
+      "location": "Chicago, Illinois",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8739458002",
+      "platform": "greenhouse",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "8739458002",
+      "posted_date": "2026-08-21"
+    },
+    {
+      "company": "Databricks",
+      "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
+      "location": "Boston, Massachusetts",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461222002",
+      "platform": "greenhouse",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "8461222002",
+      "posted_date": "2026-03-12"
+    },
+    {
+      "company": "Databricks",
+      "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
+      "location": "Chicago, Illinois",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461220002",
+      "platform": "greenhouse",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "8461220002",
+      "posted_date": "2026-03-12"
+    },
+    {
+      "company": "Databricks",
+      "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
+      "location": "Los Angeles, California",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461168002",
+      "platform": "greenhouse",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "8461168002",
       "posted_date": "2026-03-12"
     },
     {
@@ -4067,76 +4107,6 @@
     {
       "company": "Databricks",
       "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
-      "location": "Mountain View, California",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461251002",
-      "platform": "greenhouse",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "8461251002",
-      "posted_date": "2026-03-12"
-    },
-    {
-      "company": "Databricks",
-      "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
-      "location": "Denver, Colorado",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461243002",
-      "platform": "greenhouse",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "8461243002",
-      "posted_date": "2026-03-12"
-    },
-    {
-      "company": "Databricks",
-      "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
-      "location": "Washington, D.C.",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461241002",
-      "platform": "greenhouse",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "8461241002",
-      "posted_date": "2026-03-12"
-    },
-    {
-      "company": "Databricks",
-      "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
-      "location": "Atlanta, Georgia",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461239002",
-      "platform": "greenhouse",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "8461239002",
-      "posted_date": "2026-03-12"
-    },
-    {
-      "company": "Databricks",
-      "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
-      "location": "New York City, New York",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461226002",
-      "platform": "greenhouse",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "8461226002",
-      "posted_date": "2026-03-12"
-    },
-    {
-      "company": "Databricks",
-      "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
-      "location": "Boston, Massachusetts",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461222002",
-      "platform": "greenhouse",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "8461222002",
-      "posted_date": "2026-03-12"
-    },
-    {
-      "company": "Databricks",
-      "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
-      "location": "Chicago, Illinois",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461220002",
-      "platform": "greenhouse",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "8461220002",
-      "posted_date": "2026-03-12"
-    },
-    {
-      "company": "Databricks",
-      "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
       "location": "Austin, Texas",
       "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461219002",
       "platform": "greenhouse",
@@ -4157,16 +4127,6 @@
     {
       "company": "Databricks",
       "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
-      "location": "Los Angeles, California",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461168002",
-      "platform": "greenhouse",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "8461168002",
-      "posted_date": "2026-03-12"
-    },
-    {
-      "company": "Databricks",
-      "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
       "location": "San Francisco, California",
       "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461163002",
       "platform": "greenhouse",
@@ -4176,13 +4136,63 @@
     },
     {
       "company": "Databricks",
-      "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business ",
-      "location": "Seattle, Washington",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807063002",
+      "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
+      "location": "New York City, New York",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461226002",
       "platform": "greenhouse",
       "matched_role": "Forward Deployed Engineer",
-      "job_id": "8807063002",
-      "posted_date": "2026-09-14"
+      "job_id": "8461226002",
+      "posted_date": "2026-03-12"
+    },
+    {
+      "company": "Databricks",
+      "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
+      "location": "Dallas, Texas",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461218002",
+      "platform": "greenhouse",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "8461218002",
+      "posted_date": "2026-03-12"
+    },
+    {
+      "company": "Databricks",
+      "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
+      "location": "Atlanta, Georgia",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461239002",
+      "platform": "greenhouse",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "8461239002",
+      "posted_date": "2026-03-12"
+    },
+    {
+      "company": "Databricks",
+      "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
+      "location": "Washington, D.C.",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461241002",
+      "platform": "greenhouse",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "8461241002",
+      "posted_date": "2026-03-12"
+    },
+    {
+      "company": "Databricks",
+      "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
+      "location": "Denver, Colorado",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461243002",
+      "platform": "greenhouse",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "8461243002",
+      "posted_date": "2026-03-12"
+    },
+    {
+      "company": "Databricks",
+      "title": "Sr. Forward Deployed Engineer (FDE) - Communications, Media, Entertainment & Games",
+      "location": "Mountain View, California",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8461251002",
+      "platform": "greenhouse",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "8461251002",
+      "posted_date": "2026-03-12"
     },
     {
       "company": "Databricks",
@@ -4197,22 +4207,12 @@
     {
       "company": "Databricks",
       "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business ",
-      "location": "San Francisco, California",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8488399002",
+      "location": "Mountain View, California",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8647743002",
       "platform": "greenhouse",
       "matched_role": "Forward Deployed Engineer",
-      "job_id": "8488399002",
-      "posted_date": "2026-04-07"
-    },
-    {
-      "company": "Databricks",
-      "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business ",
-      "location": "Remote - New York",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807049002",
-      "platform": "greenhouse",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "8807049002",
-      "posted_date": "2026-09-14"
+      "job_id": "8647743002",
+      "posted_date": "2026-07-23"
     },
     {
       "company": "Databricks",
@@ -4227,42 +4227,32 @@
     {
       "company": "Databricks",
       "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business ",
-      "location": "Mountain View, California",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8647743002",
+      "location": "Remote - New York",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807049002",
       "platform": "greenhouse",
       "matched_role": "Forward Deployed Engineer",
-      "job_id": "8647743002",
-      "posted_date": "2026-07-23"
+      "job_id": "8807049002",
+      "posted_date": "2026-09-14"
     },
     {
       "company": "Databricks",
-      "title": "Sr. Forward Deployed Engineer (FDE) - Financial Services",
-      "location": "Washington, D.C.",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8592952002",
+      "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business ",
+      "location": "Seattle, Washington",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8807063002",
       "platform": "greenhouse",
       "matched_role": "Forward Deployed Engineer",
-      "job_id": "8592952002",
-      "posted_date": "2026-06-22"
+      "job_id": "8807063002",
+      "posted_date": "2026-09-14"
     },
     {
       "company": "Databricks",
-      "title": "Sr. Forward Deployed Engineer (FDE) - Financial Services",
-      "location": "New York City, New York",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8592942002",
+      "title": "Sr. Forward Deployed Engineer (FDE) - Digital Native Business ",
+      "location": "San Francisco, California",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8488399002",
       "platform": "greenhouse",
       "matched_role": "Forward Deployed Engineer",
-      "job_id": "8592942002",
-      "posted_date": "2026-06-22"
-    },
-    {
-      "company": "Databricks",
-      "title": "Sr. Forward Deployed Engineer (FDE) - Financial Services",
-      "location": "Central - United States",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8438791002",
-      "platform": "greenhouse",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "8438791002",
-      "posted_date": "2026-06-22"
+      "job_id": "8488399002",
+      "posted_date": "2026-04-07"
     },
     {
       "company": "Databricks",
@@ -4287,16 +4277,6 @@
     {
       "company": "Databricks",
       "title": "Sr. Forward Deployed Engineer (FDE) - Financial Services",
-      "location": "Philadelphia, Pennsylvania",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8592939002",
-      "platform": "greenhouse",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "8592939002",
-      "posted_date": "2026-06-22"
-    },
-    {
-      "company": "Databricks",
-      "title": "Sr. Forward Deployed Engineer (FDE) - Financial Services",
       "location": "Chicago, Illinois",
       "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8592938002",
       "platform": "greenhouse",
@@ -4307,11 +4287,41 @@
     {
       "company": "Databricks",
       "title": "Sr. Forward Deployed Engineer (FDE) - Financial Services",
-      "location": "Charlotte, North Carolina",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8592951002",
+      "location": "Philadelphia, Pennsylvania",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8592939002",
       "platform": "greenhouse",
       "matched_role": "Forward Deployed Engineer",
-      "job_id": "8592951002",
+      "job_id": "8592939002",
+      "posted_date": "2026-06-22"
+    },
+    {
+      "company": "Databricks",
+      "title": "Sr. Forward Deployed Engineer (FDE) - Financial Services",
+      "location": "Central - United States",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8438791002",
+      "platform": "greenhouse",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "8438791002",
+      "posted_date": "2026-06-22"
+    },
+    {
+      "company": "Databricks",
+      "title": "Sr. Forward Deployed Engineer (FDE) - Financial Services",
+      "location": "New York City, New York",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8592942002",
+      "platform": "greenhouse",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "8592942002",
+      "posted_date": "2026-06-22"
+    },
+    {
+      "company": "Databricks",
+      "title": "Sr. Forward Deployed Engineer (FDE) - Financial Services",
+      "location": "Washington, D.C.",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8592952002",
+      "platform": "greenhouse",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "8592952002",
       "posted_date": "2026-06-22"
     },
     {
@@ -4326,13 +4336,13 @@
     },
     {
       "company": "Databricks",
-      "title": "Sr. Forward Deployed Engineer (FDE) - Healthcare & Life Sciences",
-      "location": "Dallas, Texas",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8494144002",
+      "title": "Sr. Forward Deployed Engineer (FDE) - Financial Services",
+      "location": "Charlotte, North Carolina",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8592951002",
       "platform": "greenhouse",
       "matched_role": "Forward Deployed Engineer",
-      "job_id": "8494144002",
-      "posted_date": "2026-04-03"
+      "job_id": "8592951002",
+      "posted_date": "2026-06-22"
     },
     {
       "company": "Databricks",
@@ -4343,6 +4353,16 @@
       "matched_role": "Forward Deployed Engineer",
       "job_id": "8494148002",
       "posted_date": "2026-04-03"
+    },
+    {
+      "company": "Databricks",
+      "title": "Sr. Forward Deployed Engineer (FDE) - Healthcare & Life Sciences",
+      "location": "New York City, New York",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8371312002",
+      "platform": "greenhouse",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "8371312002",
+      "posted_date": "2026-03-06"
     },
     {
       "company": "Databricks",
@@ -4367,11 +4387,11 @@
     {
       "company": "Databricks",
       "title": "Sr. Forward Deployed Engineer (FDE) - Healthcare & Life Sciences",
-      "location": "Boston, Massachusetts",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8494142002",
+      "location": "Dallas, Texas",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8494144002",
       "platform": "greenhouse",
       "matched_role": "Forward Deployed Engineer",
-      "job_id": "8494142002",
+      "job_id": "8494144002",
       "posted_date": "2026-04-03"
     },
     {
@@ -4387,22 +4407,12 @@
     {
       "company": "Databricks",
       "title": "Sr. Forward Deployed Engineer (FDE) - Healthcare & Life Sciences",
-      "location": "New York City, New York",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8371312002",
+      "location": "Boston, Massachusetts",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8494142002",
       "platform": "greenhouse",
       "matched_role": "Forward Deployed Engineer",
-      "job_id": "8371312002",
-      "posted_date": "2026-03-06"
-    },
-    {
-      "company": "Databricks",
-      "title": "Sr. Forward Deployed Engineer (FDE) - Manufacturing",
-      "location": "New York City, New York",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8341313002",
-      "platform": "greenhouse",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "8341313002",
-      "posted_date": "2025-12-17"
+      "job_id": "8494142002",
+      "posted_date": "2026-04-03"
     },
     {
       "company": "Databricks",
@@ -4413,6 +4423,16 @@
       "matched_role": "Forward Deployed Engineer",
       "job_id": "8494156002",
       "posted_date": "2026-04-03"
+    },
+    {
+      "company": "Databricks",
+      "title": "Sr. Forward Deployed Engineer (FDE) - Manufacturing",
+      "location": "New York City, New York",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8341313002",
+      "platform": "greenhouse",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "8341313002",
+      "posted_date": "2025-12-17"
     },
     {
       "company": "Databricks",
@@ -4457,12 +4477,42 @@
     {
       "company": "Databricks",
       "title": "Sr. Forward Deployed Engineer (FDE) - Retail",
+      "location": "Denver, Colorado",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8647675002",
+      "platform": "greenhouse",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "8647675002",
+      "posted_date": "2026-07-23"
+    },
+    {
+      "company": "Databricks",
+      "title": "Sr. Forward Deployed Engineer (FDE) - Retail",
+      "location": "Remote - California",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8647677002",
+      "platform": "greenhouse",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "8647677002",
+      "posted_date": "2026-07-23"
+    },
+    {
+      "company": "Databricks",
+      "title": "Sr. Forward Deployed Engineer (FDE) - Retail",
       "location": "Central - United States",
       "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8647667002",
       "platform": "greenhouse",
       "matched_role": "Forward Deployed Engineer",
       "job_id": "8647667002",
       "posted_date": "2026-07-23"
+    },
+    {
+      "company": "Databricks",
+      "title": "Sr. Forward Deployed Engineer (FDE) - Retail",
+      "location": "Northeast - United States; Southeast - United States",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8643895002",
+      "platform": "greenhouse",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "8643895002",
+      "posted_date": "2026-07-22"
     },
     {
       "company": "Databricks",
@@ -4487,52 +4537,12 @@
     {
       "company": "Databricks",
       "title": "Sr. Forward Deployed Engineer (FDE) - Retail",
-      "location": "Denver, Colorado",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8647675002",
-      "platform": "greenhouse",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "8647675002",
-      "posted_date": "2026-07-23"
-    },
-    {
-      "company": "Databricks",
-      "title": "Sr. Forward Deployed Engineer (FDE) - Retail",
       "location": "Dallas, Texas",
       "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8647670002",
       "platform": "greenhouse",
       "matched_role": "Forward Deployed Engineer",
       "job_id": "8647670002",
       "posted_date": "2026-07-23"
-    },
-    {
-      "company": "Databricks",
-      "title": "Sr. Forward Deployed Engineer (FDE) - Retail",
-      "location": "Northeast - United States; Southeast - United States",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8643895002",
-      "platform": "greenhouse",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "8643895002",
-      "posted_date": "2026-07-22"
-    },
-    {
-      "company": "Databricks",
-      "title": "Sr. Forward Deployed Engineer (FDE) - Retail",
-      "location": "Remote - California",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8647677002",
-      "platform": "greenhouse",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "8647677002",
-      "posted_date": "2026-07-23"
-    },
-    {
-      "company": "Databricks",
-      "title": "Sr. Forward Deployed Engineer - FDE (Fullstack)",
-      "location": "Berlin, Germany; Munich, Germany",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8645052002",
-      "platform": "greenhouse",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "8645052002",
-      "posted_date": "2026-07-29"
     },
     {
       "company": "Databricks",
@@ -4546,13 +4556,13 @@
     },
     {
       "company": "Databricks",
-      "title": "Sr. Forward Deployed Engineer - National Security",
-      "location": "Boston, Massachusetts; Delaware; Maryland; Remote - California; Remote - New York; Remote - Washington D.C.; Virginia; West Virginia",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8746374002",
+      "title": "Sr. Forward Deployed Engineer - FDE (Fullstack)",
+      "location": "Berlin, Germany; Munich, Germany",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8645052002",
       "platform": "greenhouse",
       "matched_role": "Forward Deployed Engineer",
-      "job_id": "8746374002",
-      "posted_date": "2026-08-25"
+      "job_id": "8645052002",
+      "posted_date": "2026-07-29"
     },
     {
       "company": "Databricks",
@@ -4563,6 +4573,16 @@
       "matched_role": "Forward Deployed Engineer",
       "job_id": "8657468002",
       "posted_date": "2026-08-14"
+    },
+    {
+      "company": "Databricks",
+      "title": "Sr. Forward Deployed Engineer - National Security",
+      "location": "Boston, Massachusetts; Delaware; Maryland; Remote - California; Remote - New York; Remote - Washington D.C.; Virginia; West Virginia",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8746374002",
+      "platform": "greenhouse",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "8746374002",
+      "posted_date": "2026-08-25"
     },
     {
       "company": "Databricks",
@@ -4593,16 +4613,6 @@
       "matched_role": "Forward Deployed Engineer",
       "job_id": "8574912002",
       "posted_date": "2026-06-04"
-    },
-    {
-      "company": "Databricks",
-      "title": "Sr. Manager, AI Forward Deployed Engineering",
-      "location": "Bengaluru, India",
-      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8630019002",
-      "platform": "greenhouse",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "8630019002",
-      "posted_date": "2026-09-30"
     },
     {
       "company": "Databricks",
@@ -4977,22 +4987,22 @@
     {
       "company": "Domino Data Lab",
       "title": "Forward Deployed Engineer, Life Sciences",
-      "location": "Berlin, Germany",
-      "url": "https://app.careerpuck.com/job-board/domino-data-lab/job/8201819?gh_jid=8201819",
-      "platform": "greenhouse",
-      "matched_role": "Forward Deployed Engineer",
-      "job_id": "8201819",
-      "posted_date": "2026-09-15"
-    },
-    {
-      "company": "Domino Data Lab",
-      "title": "Forward Deployed Engineer, Life Sciences",
       "location": "Remote US",
       "url": "https://app.careerpuck.com/job-board/domino-data-lab/job/8039139?gh_jid=8039139",
       "platform": "greenhouse",
       "matched_role": "Forward Deployed Engineer",
       "job_id": "8039139",
       "posted_date": "2026-07-02"
+    },
+    {
+      "company": "Domino Data Lab",
+      "title": "Forward Deployed Engineer, Life Sciences",
+      "location": "Berlin, Germany",
+      "url": "https://app.careerpuck.com/job-board/domino-data-lab/job/8201819?gh_jid=8201819",
+      "platform": "greenhouse",
+      "matched_role": "Forward Deployed Engineer",
+      "job_id": "8201819",
+      "posted_date": "2026-09-15"
     },
     {
       "company": "Domino Data Lab",
@@ -5117,16 +5127,6 @@
     {
       "company": "Elastic",
       "title": "Principal AI Engineer - Context - Agents and Context",
-      "location": "Ireland",
-      "url": "https://jobs.elastic.co/jobs?gh_jid=8223682&gh_jid=8223682",
-      "platform": "greenhouse",
-      "matched_role": "AI Engineer",
-      "job_id": "8223682",
-      "posted_date": "2026-09-22"
-    },
-    {
-      "company": "Elastic",
-      "title": "Principal AI Engineer - Context - Agents and Context",
       "location": "Poland",
       "url": "https://jobs.elastic.co/jobs?gh_jid=8256014&gh_jid=8256014",
       "platform": "greenhouse",
@@ -5162,6 +5162,16 @@
       "platform": "greenhouse",
       "matched_role": "AI Engineer",
       "job_id": "8223688",
+      "posted_date": "2026-09-22"
+    },
+    {
+      "company": "Elastic",
+      "title": "Principal AI Engineer - Context - Agents and Context",
+      "location": "Ireland",
+      "url": "https://jobs.elastic.co/jobs?gh_jid=8223682&gh_jid=8223682",
+      "platform": "greenhouse",
+      "matched_role": "AI Engineer",
+      "job_id": "8223682",
       "posted_date": "2026-09-22"
     },
     {
@@ -5297,16 +5307,6 @@
     {
       "company": "Epic Games",
       "title": "Machine Learning Engineer, Memory",
-      "location": "Porto Alegre,Rio Grande do Sul,Brazil",
-      "url": "https://epicgames.com/careers/jobs/6142418004?gh_jid=6142418004",
-      "platform": "greenhouse",
-      "matched_role": "Machine Learning Engineer",
-      "job_id": "6142418004",
-      "posted_date": "2026-08-12"
-    },
-    {
-      "company": "Epic Games",
-      "title": "Machine Learning Engineer, Memory",
       "location": "Cary,North Carolina,United States",
       "url": "https://epicgames.com/careers/jobs/6134271004?gh_jid=6134271004",
       "platform": "greenhouse",
@@ -5323,6 +5323,16 @@
       "matched_role": "Machine Learning Engineer",
       "job_id": "6141143004",
       "posted_date": "2026-08-11"
+    },
+    {
+      "company": "Epic Games",
+      "title": "Machine Learning Engineer, Memory",
+      "location": "Porto Alegre,Rio Grande do Sul,Brazil",
+      "url": "https://epicgames.com/careers/jobs/6142418004?gh_jid=6142418004",
+      "platform": "greenhouse",
+      "matched_role": "Machine Learning Engineer",
+      "job_id": "6142418004",
+      "posted_date": "2026-08-12"
     },
     {
       "company": "Epic Games",
@@ -5377,21 +5387,21 @@
     {
       "company": "Epic Games",
       "title": "Senior Machine Learning Engineer, Discovery Recommendations",
-      "location": "BLANK,BLANK,Multiple Locations",
-      "url": "https://epicgames.com/careers/jobs/6231410004?gh_jid=6231410004",
-      "platform": "greenhouse",
-      "matched_role": "Machine Learning Engineer",
-      "job_id": "6231410004",
-      "posted_date": "2026-10-21"
-    },
-    {
-      "company": "Epic Games",
-      "title": "Senior Machine Learning Engineer, Discovery Recommendations",
       "location": "Cary,North Carolina,United States",
       "url": "https://epicgames.com/careers/jobs/6180210004?gh_jid=6180210004",
       "platform": "greenhouse",
       "matched_role": "Machine Learning Engineer",
       "job_id": "6180210004",
+      "posted_date": "2026-10-21"
+    },
+    {
+      "company": "Epic Games",
+      "title": "Senior Machine Learning Engineer, Discovery Recommendations",
+      "location": "BLANK,BLANK,Multiple Locations",
+      "url": "https://epicgames.com/careers/jobs/6231410004?gh_jid=6231410004",
+      "platform": "greenhouse",
+      "matched_role": "Machine Learning Engineer",
+      "job_id": "6231410004",
       "posted_date": "2026-10-21"
     },
     {
@@ -5596,7 +5606,7 @@
     },
     {
       "company": "Fireworks AI",
-      "title": "Member of Technical Staff, Data Infrastructure Storage",
+      "title": "Member of Technical Staff, Data Infrastructure ",
       "location": "San Mateo",
       "url": "https://jobs.ashbyhq.com/fireworks/46f91fc1-c77a-41fc-9609-fc0ec291c93f",
       "platform": "ashby",
@@ -5715,6 +5725,16 @@
       "posted_date": "2026-09-08"
     },
     {
+      "company": "Fireworks AI",
+      "title": "Member of Technical Staff, Traffic Infrastructure ",
+      "location": "San Mateo",
+      "url": "https://jobs.ashbyhq.com/fireworks/061f8cef-4553-428a-8154-688fa91953af",
+      "platform": "ashby",
+      "matched_role": "Member of Technical Staff",
+      "job_id": "061f8cef-4553-428a-8154-688fa91953af",
+      "posted_date": "2026-10-26"
+    },
+    {
       "company": "Fivetran",
       "title": "Senior Data Analyst, People",
       "location": "Oakland, California, United States, AMER",
@@ -5743,6 +5763,16 @@
       "matched_role": "Data Scientist",
       "job_id": "7806295003",
       "posted_date": "2026-07-20"
+    },
+    {
+      "company": "Flexport",
+      "title": "Product Data Analyst ",
+      "location": "Shanghai, China",
+      "url": "https://job-boards.greenhouse.io/flexport/jobs/8040985",
+      "platform": "greenhouse",
+      "matched_role": "Data Analyst",
+      "job_id": "8040985",
+      "posted_date": "2026-07-01"
     },
     {
       "company": "Flexport",
@@ -5863,16 +5893,6 @@
       "matched_role": "Data Scientist",
       "job_id": "e68a4dac-ca1d-43a1-a56a-6e45da05dc88",
       "posted_date": "2026-10-22"
-    },
-    {
-      "company": "Gen Digital",
-      "title": "Data Scientist, Intern - MoneyLion",
-      "location": "MYS - Kuala Lumpur",
-      "url": "https://jobs.ashbyhq.com/gen-digital/020a42a9-7c79-4e6c-958f-726069ff86f0",
-      "platform": "ashby",
-      "matched_role": "Data Scientist",
-      "job_id": "020a42a9-7c79-4e6c-958f-726069ff86f0",
-      "posted_date": "2026-04-15"
     },
     {
       "company": "Gen Digital",
@@ -6157,16 +6177,6 @@
     {
       "company": "Graphcore",
       "title": "Senior Machine Learning Engineer (Large Systems)",
-      "location": "Gda\u0144sk, Pomeranian Voivodeship, Poland",
-      "url": "https://job-boards.greenhouse.io/graphcore/jobs/8564387002",
-      "platform": "greenhouse",
-      "matched_role": "Machine Learning Engineer",
-      "job_id": "8564387002",
-      "posted_date": "2026-07-06"
-    },
-    {
-      "company": "Graphcore",
-      "title": "Senior Machine Learning Engineer (Large Systems)",
       "location": "Bristol, UK",
       "url": "https://job-boards.greenhouse.io/graphcore/jobs/8881587002",
       "platform": "greenhouse",
@@ -6177,21 +6187,31 @@
     {
       "company": "Graphcore",
       "title": "Senior Machine Learning Engineer (Large Systems)",
-      "location": "Cambridge, UK",
-      "url": "https://job-boards.greenhouse.io/graphcore/jobs/8881595002",
-      "platform": "greenhouse",
-      "matched_role": "Machine Learning Engineer",
-      "job_id": "8881595002",
-      "posted_date": "2026-10-09"
-    },
-    {
-      "company": "Graphcore",
-      "title": "Senior Machine Learning Engineer (Large Systems)",
       "location": "London, UK",
       "url": "https://job-boards.greenhouse.io/graphcore/jobs/8881592002",
       "platform": "greenhouse",
       "matched_role": "Machine Learning Engineer",
       "job_id": "8881592002",
+      "posted_date": "2026-10-09"
+    },
+    {
+      "company": "Graphcore",
+      "title": "Senior Machine Learning Engineer (Large Systems)",
+      "location": "Gda\u0144sk, Pomeranian Voivodeship, Poland",
+      "url": "https://job-boards.greenhouse.io/graphcore/jobs/8564387002",
+      "platform": "greenhouse",
+      "matched_role": "Machine Learning Engineer",
+      "job_id": "8564387002",
+      "posted_date": "2026-07-06"
+    },
+    {
+      "company": "Graphcore",
+      "title": "Senior Machine Learning Engineer (Large Systems)",
+      "location": "Cambridge, UK",
+      "url": "https://job-boards.greenhouse.io/graphcore/jobs/8881595002",
+      "platform": "greenhouse",
+      "matched_role": "Machine Learning Engineer",
+      "job_id": "8881595002",
       "posted_date": "2026-10-09"
     },
     {
@@ -6436,43 +6456,13 @@
     },
     {
       "company": "Instacart",
-      "title": "Senior Data Scientist I - Meals",
-      "location": "Canada - Remote (ON, AB, BC, or NS Only)",
-      "url": "https://instacart.careers/job/?gh_jid=8236906",
-      "platform": "greenhouse",
-      "matched_role": "Data Scientist",
-      "job_id": "8236906",
-      "posted_date": "2026-09-28"
-    },
-    {
-      "company": "Instacart",
-      "title": "Senior Data Scientist I - Meals",
+      "title": "Senior Machine Learning Engineer, Economist",
       "location": "United States - Remote",
-      "url": "https://instacart.careers/job/?gh_jid=8236905",
+      "url": "https://instacart.careers/job/?gh_jid=8157736",
       "platform": "greenhouse",
-      "matched_role": "Data Scientist",
-      "job_id": "8236905",
-      "posted_date": "2026-09-28"
-    },
-    {
-      "company": "Instacart",
-      "title": "Senior Data Scientist II - Ads Optimization",
-      "location": "United States - Remote",
-      "url": "https://instacart.careers/job/?gh_jid=8237075",
-      "platform": "greenhouse",
-      "matched_role": "Data Scientist",
-      "job_id": "8237075",
-      "posted_date": "2026-09-28"
-    },
-    {
-      "company": "Instacart",
-      "title": "Senior Data Scientist II - Ads Optimization",
-      "location": "Canada - Remote (ON, AB, BC, or NS Only)",
-      "url": "https://instacart.careers/job/?gh_jid=8237079",
-      "platform": "greenhouse",
-      "matched_role": "Data Scientist",
-      "job_id": "8237079",
-      "posted_date": "2026-09-28"
+      "matched_role": "Machine Learning Engineer",
+      "job_id": "8157736",
+      "posted_date": "2026-08-27"
     },
     {
       "company": "Instacart",
@@ -6482,16 +6472,6 @@
       "platform": "greenhouse",
       "matched_role": "Machine Learning Engineer",
       "job_id": "8157738",
-      "posted_date": "2026-08-27"
-    },
-    {
-      "company": "Instacart",
-      "title": "Senior Machine Learning Engineer, Economist",
-      "location": "United States - Remote",
-      "url": "https://instacart.careers/job/?gh_jid=8157736",
-      "platform": "greenhouse",
-      "matched_role": "Machine Learning Engineer",
-      "job_id": "8157736",
       "posted_date": "2026-08-27"
     },
     {
@@ -6667,21 +6647,21 @@
     {
       "company": "Klaviyo",
       "title": "Senior Lead AI Engineer - G&A Systems",
-      "location": "San Francisco, CA",
-      "url": "https://www.klaviyo.com/careers/jobs/8044834003?gh_jid=8044834003",
-      "platform": "greenhouse",
-      "matched_role": "AI Engineer",
-      "job_id": "8044834003",
-      "posted_date": "2026-10-26"
-    },
-    {
-      "company": "Klaviyo",
-      "title": "Senior Lead AI Engineer - G&A Systems",
       "location": "Boston, MA",
       "url": "https://www.klaviyo.com/careers/jobs/8017125003?gh_jid=8017125003",
       "platform": "greenhouse",
       "matched_role": "AI Engineer",
       "job_id": "8017125003",
+      "posted_date": "2026-10-26"
+    },
+    {
+      "company": "Klaviyo",
+      "title": "Senior Lead AI Engineer - G&A Systems",
+      "location": "San Francisco, CA",
+      "url": "https://www.klaviyo.com/careers/jobs/8044834003?gh_jid=8044834003",
+      "platform": "greenhouse",
+      "matched_role": "AI Engineer",
+      "job_id": "8044834003",
       "posted_date": "2026-10-26"
     },
     {
@@ -6867,21 +6847,21 @@
     {
       "company": "Lyft",
       "title": "Data Scientist",
-      "location": "New York, NY",
-      "url": "https://app.careerpuck.com/job-board/lyft/job/8896675002?gh_jid=8896675002",
-      "platform": "greenhouse",
-      "matched_role": "Data Scientist",
-      "job_id": "8896675002",
-      "posted_date": "2026-10-16"
-    },
-    {
-      "company": "Lyft",
-      "title": "Data Scientist",
       "location": "San Francisco, CA",
       "url": "https://app.careerpuck.com/job-board/lyft/job/8896671002?gh_jid=8896671002",
       "platform": "greenhouse",
       "matched_role": "Data Scientist",
       "job_id": "8896671002",
+      "posted_date": "2026-10-16"
+    },
+    {
+      "company": "Lyft",
+      "title": "Data Scientist",
+      "location": "New York, NY",
+      "url": "https://app.careerpuck.com/job-board/lyft/job/8896675002?gh_jid=8896675002",
+      "platform": "greenhouse",
+      "matched_role": "Data Scientist",
+      "job_id": "8896675002",
       "posted_date": "2026-10-16"
     },
     {
@@ -6987,16 +6967,6 @@
     {
       "company": "Lyft",
       "title": "Senior Data Scientist, Causal Inference",
-      "location": "New York, NY",
-      "url": "https://app.careerpuck.com/job-board/lyft/job/8584688002?gh_jid=8584688002",
-      "platform": "greenhouse",
-      "matched_role": "Data Scientist",
-      "job_id": "8584688002",
-      "posted_date": "2026-06-10"
-    },
-    {
-      "company": "Lyft",
-      "title": "Senior Data Scientist, Causal Inference",
       "location": "San Francisco, CA",
       "url": "https://app.careerpuck.com/job-board/lyft/job/8584595002?gh_jid=8584595002",
       "platform": "greenhouse",
@@ -7016,13 +6986,13 @@
     },
     {
       "company": "Lyft",
-      "title": "Senior Machine Learning Engineer, Recommendations",
-      "location": "San Francisco, CA",
-      "url": "https://app.careerpuck.com/job-board/lyft/job/8430552002?gh_jid=8430552002",
+      "title": "Senior Data Scientist, Causal Inference",
+      "location": "New York, NY",
+      "url": "https://app.careerpuck.com/job-board/lyft/job/8584688002?gh_jid=8584688002",
       "platform": "greenhouse",
-      "matched_role": "Machine Learning Engineer",
-      "job_id": "8430552002",
-      "posted_date": "2026-02-20"
+      "matched_role": "Data Scientist",
+      "job_id": "8584688002",
+      "posted_date": "2026-06-10"
     },
     {
       "company": "Lyft",
@@ -7033,6 +7003,16 @@
       "matched_role": "Machine Learning Engineer",
       "job_id": "8603653002",
       "posted_date": "2026-06-23"
+    },
+    {
+      "company": "Lyft",
+      "title": "Senior Machine Learning Engineer, Recommendations",
+      "location": "San Francisco, CA",
+      "url": "https://app.careerpuck.com/job-board/lyft/job/8430552002?gh_jid=8430552002",
+      "platform": "greenhouse",
+      "matched_role": "Machine Learning Engineer",
+      "job_id": "8430552002",
+      "posted_date": "2026-02-20"
     },
     {
       "company": "Match Group",
@@ -7467,22 +7447,22 @@
     {
       "company": "MongoDB",
       "title": "Senior Software Engineer, Forward Deployed AI Engineer",
-      "location": "Ireland",
-      "url": "https://www.mongodb.com/careers/job/?gh_jid=7590735",
-      "platform": "greenhouse",
-      "matched_role": "AI Engineer",
-      "job_id": "7590735",
-      "posted_date": "2026-02-05"
-    },
-    {
-      "company": "MongoDB",
-      "title": "Senior Software Engineer, Forward Deployed AI Engineer",
       "location": "Cork, Ireland; Dublin, Ireland",
       "url": "https://www.mongodb.com/careers/job/?gh_jid=7392902",
       "platform": "greenhouse",
       "matched_role": "AI Engineer",
       "job_id": "7392902",
       "posted_date": "2025-11-20"
+    },
+    {
+      "company": "MongoDB",
+      "title": "Senior Software Engineer, Forward Deployed AI Engineer",
+      "location": "Ireland",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=7590735",
+      "platform": "greenhouse",
+      "matched_role": "AI Engineer",
+      "job_id": "7590735",
+      "posted_date": "2026-02-05"
     },
     {
       "company": "Monte Carlo",
@@ -7667,22 +7647,22 @@
     {
       "company": "Okta",
       "title": "Senior Data Analyst (Auth0)",
-      "location": "Chicago, Illinois; New York, New York; Seattle, Washington; Washington, DC",
-      "url": "https://www.okta.com/company/careers/opportunity/8304288?gh_jid=8304288",
-      "platform": "greenhouse",
-      "matched_role": "Data Analyst",
-      "job_id": "8304288",
-      "posted_date": "2026-10-21"
-    },
-    {
-      "company": "Okta",
-      "title": "Senior Data Analyst (Auth0)",
       "location": "Bengaluru, India",
       "url": "https://www.okta.com/company/careers/opportunity/7780488?gh_jid=7780488",
       "platform": "greenhouse",
       "matched_role": "Data Analyst",
       "job_id": "7780488",
       "posted_date": "2026-05-06"
+    },
+    {
+      "company": "Okta",
+      "title": "Senior Data Analyst (Auth0)",
+      "location": "Chicago, Illinois; New York, New York; Seattle, Washington; Washington, DC",
+      "url": "https://www.okta.com/company/careers/opportunity/8304288?gh_jid=8304288",
+      "platform": "greenhouse",
+      "matched_role": "Data Analyst",
+      "job_id": "8304288",
+      "posted_date": "2026-10-21"
     },
     {
       "company": "Okta",
@@ -8616,16 +8596,6 @@
     },
     {
       "company": "OpenAI",
-      "title": "People Research Data Scientist, AI Fairness & Bias",
-      "location": "San Francisco",
-      "url": "https://jobs.ashbyhq.com/openai/cadb7c24-2aea-4b98-a793-65ae9388b5d6",
-      "platform": "ashby",
-      "matched_role": "Data Scientist",
-      "job_id": "cadb7c24-2aea-4b98-a793-65ae9388b5d6",
-      "posted_date": "2026-08-31"
-    },
-    {
-      "company": "OpenAI",
       "title": "Product Data Scientist - Youth, Families and Learning",
       "location": "San Francisco",
       "url": "https://jobs.ashbyhq.com/openai/1f148786-2e00-472a-96b9-0b29015980e1",
@@ -8807,21 +8777,21 @@
     {
       "company": "Oscar Health",
       "title": "Data Scientist II",
-      "location": "Tempe, Arizona, United States",
-      "url": "https://job-boards.greenhouse.io/oscar/jobs/7594416",
-      "platform": "greenhouse",
-      "matched_role": "Data Scientist",
-      "job_id": "7594416",
-      "posted_date": "2026-02-06"
-    },
-    {
-      "company": "Oscar Health",
-      "title": "Data Scientist II",
       "location": "New York, New York, United States",
       "url": "https://job-boards.greenhouse.io/oscar/jobs/7592301",
       "platform": "greenhouse",
       "matched_role": "Data Scientist",
       "job_id": "7592301",
+      "posted_date": "2026-02-06"
+    },
+    {
+      "company": "Oscar Health",
+      "title": "Data Scientist II",
+      "location": "Tempe, Arizona, United States",
+      "url": "https://job-boards.greenhouse.io/oscar/jobs/7594416",
+      "platform": "greenhouse",
+      "matched_role": "Data Scientist",
+      "job_id": "7594416",
       "posted_date": "2026-02-06"
     },
     {
@@ -9898,21 +9868,21 @@
       "company": "Pinterest",
       "title": "Staff Machine Learning Engineer",
       "location": "San Francisco, CA, US; Remote, US",
-      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8015543",
-      "platform": "greenhouse",
-      "matched_role": "Machine Learning Engineer",
-      "job_id": "8015543",
-      "posted_date": "2026-10-14"
-    },
-    {
-      "company": "Pinterest",
-      "title": "Staff Machine Learning Engineer",
-      "location": "San Francisco, CA, US; Remote, US",
       "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8240355",
       "platform": "greenhouse",
       "matched_role": "Machine Learning Engineer",
       "job_id": "8240355",
       "posted_date": "2026-10-26"
+    },
+    {
+      "company": "Pinterest",
+      "title": "Staff Machine Learning Engineer",
+      "location": "San Francisco, CA, US; Remote, US",
+      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8015543",
+      "platform": "greenhouse",
+      "matched_role": "Machine Learning Engineer",
+      "job_id": "8015543",
+      "posted_date": "2026-10-14"
     },
     {
       "company": "Pinterest",
@@ -9923,16 +9893,6 @@
       "matched_role": "Machine Learning Engineer",
       "job_id": "8238679",
       "posted_date": "2026-09-29"
-    },
-    {
-      "company": "Pinterest",
-      "title": "Staff Machine Learning Engineer, Ads Conversion Core Modeling",
-      "location": "San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US",
-      "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8284744",
-      "platform": "greenhouse",
-      "matched_role": "Machine Learning Engineer",
-      "job_id": "8284744",
-      "posted_date": "2026-10-16"
     },
     {
       "company": "Pinterest",
@@ -10216,6 +10176,16 @@
     },
     {
       "company": "Reddit",
+      "title": "Machine Learning Engineering Manager -  Core Ads Ranking",
+      "location": "Remote - United States",
+      "url": "https://job-boards.greenhouse.io/reddit/jobs/8319536",
+      "platform": "greenhouse",
+      "matched_role": "Machine Learning Engineer",
+      "job_id": "8319536",
+      "posted_date": "2026-10-26"
+    },
+    {
+      "company": "Reddit",
       "title": "Principal Data Scientist, Ads",
       "location": "Remote - United States",
       "url": "https://job-boards.greenhouse.io/reddit/jobs/7330347",
@@ -10347,22 +10317,22 @@
     {
       "company": "Reddit",
       "title": "Staff Data Scientist - Ads Measurement, Signals, Privacy",
-      "location": "Remote - United States",
-      "url": "https://job-boards.greenhouse.io/reddit/jobs/8072076",
-      "platform": "greenhouse",
-      "matched_role": "Data Scientist",
-      "job_id": "8072076",
-      "posted_date": "2026-07-17"
-    },
-    {
-      "company": "Reddit",
-      "title": "Staff Data Scientist - Ads Measurement, Signals, Privacy",
       "location": "Remote - Ontario, Canada",
       "url": "https://job-boards.greenhouse.io/reddit/jobs/8103609",
       "platform": "greenhouse",
       "matched_role": "Data Scientist",
       "job_id": "8103609",
       "posted_date": "2026-08-03"
+    },
+    {
+      "company": "Reddit",
+      "title": "Staff Data Scientist - Ads Measurement, Signals, Privacy",
+      "location": "Remote - United States",
+      "url": "https://job-boards.greenhouse.io/reddit/jobs/8072076",
+      "platform": "greenhouse",
+      "matched_role": "Data Scientist",
+      "job_id": "8072076",
+      "posted_date": "2026-07-17"
     },
     {
       "company": "Reddit",
@@ -10583,16 +10553,6 @@
       "matched_role": "Data Scientist",
       "job_id": "8685ba32-883a-42e5-b98b-f3c51a77bceb",
       "posted_date": "2026-09-18"
-    },
-    {
-      "company": "Replit",
-      "title": "Data Scientist, Enterprise",
-      "location": "Foster City, CA",
-      "url": "https://jobs.ashbyhq.com/replit/c05749db-f413-4091-a95c-c8e0aa1b5630",
-      "platform": "ashby",
-      "matched_role": "Data Scientist",
-      "job_id": "c05749db-f413-4091-a95c-c8e0aa1b5630",
-      "posted_date": "2025-11-14"
     },
     {
       "company": "Replit",
@@ -10857,21 +10817,21 @@
     {
       "company": "Rocket Lab",
       "title": "Senior Machine Learning Engineer II (EO/IR Image Analysis)",
-      "location": "Tucson, AZ",
-      "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8025569003",
-      "platform": "greenhouse",
-      "matched_role": "Machine Learning Engineer",
-      "job_id": "8025569003",
-      "posted_date": "2026-10-11"
-    },
-    {
-      "company": "Rocket Lab",
-      "title": "Senior Machine Learning Engineer II (EO/IR Image Analysis)",
       "location": "Long Beach, CA",
       "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8025567003",
       "platform": "greenhouse",
       "matched_role": "Machine Learning Engineer",
       "job_id": "8025567003",
+      "posted_date": "2026-10-11"
+    },
+    {
+      "company": "Rocket Lab",
+      "title": "Senior Machine Learning Engineer II (EO/IR Image Analysis)",
+      "location": "Tucson, AZ",
+      "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8025569003",
+      "platform": "greenhouse",
+      "matched_role": "Machine Learning Engineer",
+      "job_id": "8025569003",
       "posted_date": "2026-10-11"
     },
     {
@@ -11057,16 +11017,6 @@
     {
       "company": "Samsara",
       "title": "Senior AI Data & Analytics Engineer II",
-      "location": "Remote - NYC",
-      "url": "https://www.samsara.com/company/careers/roles/8281479?gh_jid=8281479",
-      "platform": "greenhouse",
-      "matched_role": "Analytics Engineer",
-      "job_id": "8281479",
-      "posted_date": "2026-10-14"
-    },
-    {
-      "company": "Samsara",
-      "title": "Senior AI Data & Analytics Engineer II",
       "location": "Remote - Seattle",
       "url": "https://www.samsara.com/company/careers/roles/8302004?gh_jid=8302004",
       "platform": "greenhouse",
@@ -11132,6 +11082,16 @@
       "platform": "greenhouse",
       "matched_role": "Analytics Engineer",
       "job_id": "8281482",
+      "posted_date": "2026-10-14"
+    },
+    {
+      "company": "Samsara",
+      "title": "Senior AI Data & Analytics Engineer II",
+      "location": "Remote - NYC",
+      "url": "https://www.samsara.com/company/careers/roles/8281479?gh_jid=8281479",
+      "platform": "greenhouse",
+      "matched_role": "Analytics Engineer",
+      "job_id": "8281479",
       "posted_date": "2026-10-14"
     },
     {
@@ -11787,6 +11747,16 @@
     {
       "company": "SpaceX",
       "title": "AI Engineer, Special Programs - Top Secret Clearance",
+      "location": "Washington, DC",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8557219002?gh_jid=8557219002",
+      "platform": "greenhouse",
+      "matched_role": "AI Engineer",
+      "job_id": "8557219002",
+      "posted_date": "2026-05-21"
+    },
+    {
+      "company": "SpaceX",
+      "title": "AI Engineer, Special Programs - Top Secret Clearance",
       "location": "Palo Alto, CA",
       "url": "https://boards.greenhouse.io/spacex/jobs/8557073002?gh_jid=8557073002",
       "platform": "greenhouse",
@@ -11796,13 +11766,13 @@
     },
     {
       "company": "SpaceX",
-      "title": "AI Engineer, Special Programs - Top Secret Clearance",
-      "location": "Washington, DC",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8557219002?gh_jid=8557219002",
+      "title": "AI Engineer, Supercomputing, Special Programs - Top Secret Clearance",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8865231002?gh_jid=8865231002",
       "platform": "greenhouse",
       "matched_role": "AI Engineer",
-      "job_id": "8557219002",
-      "posted_date": "2026-05-21"
+      "job_id": "8865231002",
+      "posted_date": "2026-10-02"
     },
     {
       "company": "SpaceX",
@@ -11822,16 +11792,6 @@
       "platform": "greenhouse",
       "matched_role": "AI Engineer",
       "job_id": "8865230002",
-      "posted_date": "2026-10-02"
-    },
-    {
-      "company": "SpaceX",
-      "title": "AI Engineer, Supercomputing, Special Programs - Top Secret Clearance",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8865231002?gh_jid=8865231002",
-      "platform": "greenhouse",
-      "matched_role": "AI Engineer",
-      "job_id": "8865231002",
       "posted_date": "2026-10-02"
     },
     {
@@ -11887,16 +11847,6 @@
     {
       "company": "SpaceX",
       "title": "Sr. AI Engineer, Special Programs",
-      "location": "Washington, DC",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8557268002?gh_jid=8557268002",
-      "platform": "greenhouse",
-      "matched_role": "AI Engineer",
-      "job_id": "8557268002",
-      "posted_date": "2026-05-21"
-    },
-    {
-      "company": "SpaceX",
-      "title": "Sr. AI Engineer, Special Programs",
       "location": "Palo Alto, CA",
       "url": "https://boards.greenhouse.io/spacex/jobs/8557060002?gh_jid=8557060002",
       "platform": "greenhouse",
@@ -11906,12 +11856,12 @@
     },
     {
       "company": "SpaceX",
-      "title": "Sr. AI Engineer, Special Programs - Top Secret Clearance",
+      "title": "Sr. AI Engineer, Special Programs",
       "location": "Washington, DC",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8557272002?gh_jid=8557272002",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8557268002?gh_jid=8557268002",
       "platform": "greenhouse",
       "matched_role": "AI Engineer",
-      "job_id": "8557272002",
+      "job_id": "8557268002",
       "posted_date": "2026-05-21"
     },
     {
@@ -11926,13 +11876,23 @@
     },
     {
       "company": "SpaceX",
-      "title": "Sr. AI Engineer, Supercomputing, Special Programs - Top Secret Clearance",
-      "location": "Palo Alto, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8557126002?gh_jid=8557126002",
+      "title": "Sr. AI Engineer, Special Programs - Top Secret Clearance",
+      "location": "Washington, DC",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8557272002?gh_jid=8557272002",
       "platform": "greenhouse",
       "matched_role": "AI Engineer",
-      "job_id": "8557126002",
+      "job_id": "8557272002",
       "posted_date": "2026-05-21"
+    },
+    {
+      "company": "SpaceX",
+      "title": "Sr. AI Engineer, Supercomputing, Special Programs - Top Secret Clearance",
+      "location": "Hawthorne, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8865268002?gh_jid=8865268002",
+      "platform": "greenhouse",
+      "matched_role": "AI Engineer",
+      "job_id": "8865268002",
+      "posted_date": "2026-10-02"
     },
     {
       "company": "SpaceX",
@@ -11947,12 +11907,12 @@
     {
       "company": "SpaceX",
       "title": "Sr. AI Engineer, Supercomputing, Special Programs - Top Secret Clearance",
-      "location": "Hawthorne, CA",
-      "url": "https://boards.greenhouse.io/spacex/jobs/8865268002?gh_jid=8865268002",
+      "location": "Palo Alto, CA",
+      "url": "https://boards.greenhouse.io/spacex/jobs/8557126002?gh_jid=8557126002",
       "platform": "greenhouse",
       "matched_role": "AI Engineer",
-      "job_id": "8865268002",
-      "posted_date": "2026-10-02"
+      "job_id": "8557126002",
+      "posted_date": "2026-05-21"
     },
     {
       "company": "SpaceX",
@@ -12156,6 +12116,16 @@
     },
     {
       "company": "Stripe",
+      "title": "AI Engineer",
+      "location": "Chicago",
+      "url": "https://stripe.com/jobs/search?gh_jid=8144196",
+      "platform": "greenhouse",
+      "matched_role": "AI Engineer",
+      "job_id": "8144196",
+      "posted_date": "2026-10-07"
+    },
+    {
+      "company": "Stripe",
       "title": "Data Analyst",
       "location": "Canada",
       "url": "https://stripe.com/jobs/search?gh_jid=5416444",
@@ -12227,22 +12197,22 @@
     {
       "company": "Stripe",
       "title": "Data Scientist",
-      "location": "Toronto",
-      "url": "https://stripe.com/jobs/search?gh_jid=5895430",
-      "platform": "greenhouse",
-      "matched_role": "Data Scientist",
-      "job_id": "5895430",
-      "posted_date": "2024-04-30"
-    },
-    {
-      "company": "Stripe",
-      "title": "Data Scientist",
       "location": "N/A",
       "url": "https://stripe.com/jobs/search?gh_jid=5601879",
       "platform": "greenhouse",
       "matched_role": "Data Scientist",
       "job_id": "5601879",
       "posted_date": "2024-01-09"
+    },
+    {
+      "company": "Stripe",
+      "title": "Data Scientist",
+      "location": "Toronto",
+      "url": "https://stripe.com/jobs/search?gh_jid=5895430",
+      "platform": "greenhouse",
+      "matched_role": "Data Scientist",
+      "job_id": "5895430",
+      "posted_date": "2024-04-30"
     },
     {
       "company": "Stripe",
@@ -12297,22 +12267,22 @@
     {
       "company": "Stripe",
       "title": "Machine Learning Engineer, Radar",
-      "location": "Seattle, South San Francisco ",
-      "url": "https://stripe.com/jobs/search?gh_jid=7983456",
-      "platform": "greenhouse",
-      "matched_role": "Machine Learning Engineer",
-      "job_id": "7983456",
-      "posted_date": "2026-06-23"
-    },
-    {
-      "company": "Stripe",
-      "title": "Machine Learning Engineer, Radar",
       "location": "Seattle",
       "url": "https://stripe.com/jobs/search?gh_jid=8243617",
       "platform": "greenhouse",
       "matched_role": "Machine Learning Engineer",
       "job_id": "8243617",
       "posted_date": "2026-10-07"
+    },
+    {
+      "company": "Stripe",
+      "title": "Machine Learning Engineer, Radar",
+      "location": "Seattle, South San Francisco ",
+      "url": "https://stripe.com/jobs/search?gh_jid=7983456",
+      "platform": "greenhouse",
+      "matched_role": "Machine Learning Engineer",
+      "job_id": "7983456",
+      "posted_date": "2026-06-23"
     },
     {
       "company": "Stripe",
@@ -12327,21 +12297,21 @@
     {
       "company": "Stripe",
       "title": "PhD Data Scientist, Intern",
-      "location": "Toronto",
-      "url": "https://stripe.com/jobs/search?gh_jid=8194285",
-      "platform": "greenhouse",
-      "matched_role": "Data Scientist",
-      "job_id": "8194285",
-      "posted_date": "2026-10-01"
-    },
-    {
-      "company": "Stripe",
-      "title": "PhD Data Scientist, Intern",
       "location": "New York, Seattle, South San Francisco HQ",
       "url": "https://stripe.com/jobs/search?gh_jid=8194283",
       "platform": "greenhouse",
       "matched_role": "Data Scientist",
       "job_id": "8194283",
+      "posted_date": "2026-10-01"
+    },
+    {
+      "company": "Stripe",
+      "title": "PhD Data Scientist, Intern",
+      "location": "Toronto",
+      "url": "https://stripe.com/jobs/search?gh_jid=8194285",
+      "platform": "greenhouse",
+      "matched_role": "Data Scientist",
+      "job_id": "8194285",
       "posted_date": "2026-10-01"
     },
     {
@@ -13477,12 +13447,12 @@
     {
       "company": "Wrike",
       "title": "Senior Data Scientist",
-      "location": "Prague",
-      "url": "https://job-boards.greenhouse.io/wrike/jobs/4353721005",
+      "location": "Nicosia",
+      "url": "https://job-boards.greenhouse.io/wrike/jobs/4713776005",
       "platform": "greenhouse",
       "matched_role": "Data Scientist",
-      "job_id": "4353721005",
-      "posted_date": "2023-12-29"
+      "job_id": "4713776005",
+      "posted_date": "2026-07-10"
     },
     {
       "company": "Wrike",
@@ -13497,12 +13467,12 @@
     {
       "company": "Wrike",
       "title": "Senior Data Scientist",
-      "location": "Nicosia",
-      "url": "https://job-boards.greenhouse.io/wrike/jobs/4713776005",
+      "location": "Prague",
+      "url": "https://job-boards.greenhouse.io/wrike/jobs/4353721005",
       "platform": "greenhouse",
       "matched_role": "Data Scientist",
-      "job_id": "4713776005",
-      "posted_date": "2026-07-10"
+      "job_id": "4353721005",
+      "posted_date": "2023-12-29"
     },
     {
       "company": "Writer",
@@ -13863,6 +13833,16 @@
       "matched_role": "Data Scientist",
       "job_id": "acaafc9a-486d-4045-80d7-12b09e39330e",
       "posted_date": "2022-05-04"
+    },
+    {
+      "company": "Zscaler",
+      "title": "Sr. Staff Applied AI Engineer, GTM",
+      "location": "Remote - USA; Santa Clara, California, USA",
+      "url": "https://job-boards.greenhouse.io/zscaler/jobs/5275347007",
+      "platform": "greenhouse",
+      "matched_role": "AI Engineer",
+      "job_id": "5275347007",
+      "posted_date": "2026-10-26"
     },
     {
       "company": "Zscaler",
